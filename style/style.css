@@ -1,22 +1,21 @@
 /* Dispositivos extra pequenos (telefones, 600px e inferiores) */
 @media only screen and (max-width: 600px) {
+  /* Dispositivos extra pequenos (telefones, 600px e inferiores) */
   html {
     padding: 0;
     margin: 0;
   }
-  
+
   body {
+    max-width: 600px;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
   }
-  nav {
-    width: 100vw;
-  }
 
   h1 {
-  
+
     padding-left: 5px;
     font-size: 2rem;
     margin-top: 0;
@@ -85,39 +84,6 @@
     "wdth" 100;
   }
 
-  .n-menu {
-    display: flex;
-    width: 100vw;
-    height: 100px;
-    color: rgb(0, 0, 0);
-    background-color: #ccbf0f;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column
-  }
-
-  .n-menu p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
-  .n-menu a {
-    font-size: 0.8rem;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-
-  .n-menu li {
-    padding: 10px;
-    display: inline;
-    list-style-type: none;
-  }
-
-  .n-menu ul {
-    margin: 0;
-    padding: 0;
-  }
-
   .t-white {
     color: var(--t-white);
   }
@@ -126,90 +92,117 @@
     color: var(--t-black);
   }
 
-  #h-main {
-    width: 100%;
-    height: 600px;
-    background-color: var(--c-yellow);
+  .h-menu {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(179, 167, 12);
   }
 
-  .container h2 {
-    font-size: 2.5rem;
-    padding-left: 20px;
+  .n-menu h1 {
     padding-top: 10px;
-  }
-  .container p {
-    font-size: 1.8rem;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    width: 90%;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: var(--t-black);
   }
 
-  .container button {
-    margin-left: 20px;
+  .p-menu {
+    display: none;
+  }
+  .n-menu {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
+  .ul-menu {
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  .ul-menu a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: var(--t-black);
+  }
+
+  .sec-one {
+    width: 100vw;
+    height: 500px;
+    background-color: #ffee00;
+  }
+
+  .sec-one h2 {
+    padding-left: 10px;
+  }
+
+  .sec-one p {
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .sec-one button {
+    margin-left: 20%;
   }
 
   .btn-main {
-    color: white;
-    font-size: 30px;
     width: 300px;
-    height: 60px;
+    height: 50px;
+    color: var(--t-white);
+    font-size: 2rem;
     border-radius: 10px;
     border-style: none;
     background-color: rgb(19, 19, 167);
   }
 
-  #sec-one {
-    display: flex;
-    width: 100vw;
-    height: 370vh;
-    background-color: rgb(209, 209, 209);
-    flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
+  .btn-main:hover {
+    transform: scale(1.1);
+    background-color: blue;
   }
 
-  #sec-one h2 {
-    font-size: 2.8rem;
+  .sec-two {
+    width: 100vw;
+    height: 1950px;
+    background-color: rgb(221, 221, 220);
+  }
+
+  .sec-two h2 {
+    padding-left: 10px;
   }
 
   .d-grid {
     display: grid;
-    padding-top: 30px;
-    align-items: center;
-    justify-items: center;
-    box-sizing: border-box;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
+    align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
   }
 
   .grid-item {
-    width: 80%;
-    height: 500px;
-    background-color: rgb(255, 254, 254);
+    width: 70%;
+    height: 440px;
+    padding-left: 10px;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--t-white);
     border-radius: 10px;
   }
 
   .img-grid {
-    width: 100px;
-    height: 100px;
-    padding-top: 20px;
-    padding-left: 35%;
-    background-size: cover;
-    background-position: center;
+    display: none;
   }
 
   .grid-item h3 {
-    width: 90%;
-    font-size: 2.3rem;
-    padding-top: 10px;
-    padding-left: 20px;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .grid-item p {
-    font-size: 1.5rem;
-    width: 90%;
+    width: 340px;
   }
 
   .grid-item:hover {
@@ -217,115 +210,62 @@
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
   }
 
-  #sec-two {
-    display: flex;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    padding-top: 10px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+  .sec-contact {
+    width: 100vw;
+    height: 800px;
+    background-color: rgb(47, 65, 92);
   }
 
-  #sec-two h4 {
-    padding-left: 20px;
+  .sec-contact h4 {
+    padding-left: 10px;
   }
 
-  #sec-two p {
-    font-size: 1.8rem;
-    width: 90%;
-    height: 50%;
-    padding-left: 20px;
-    padding-bottom: 50px;
-  }
-
-  #sec-two ul {
-    padding-top: 20px;
-    padding-left: 20px;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
-  #sec-two li {
-    list-style-type: none;
-  }
-
-  #sec-two a {
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-
-  .contact-form {
-    width: 500px;
-    height: 720px;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: white;
-    background-color: rgba(175, 175, 175, 0.144);
-    border-radius: 10px;
-    align-content: center center; 
-  }
-
-  .contact-form label {
-    font-size: 2.5rem;
-    padding-left: 20px;
-  }
-
-  .contact-form input {
-    width: 80%;
-    height: 50px;
-    margin-left: 20px;
-    border-style: none;
-    border-radius: 5px;
-  }
-
-  .contact-form input::placeholder {
-    font-size: 1.8rem;
-  }
-
-  .contact-form textarea {
-    width: 80%;
-    margin-left: 20px;
-    border-style: none;
-    border-radius: 5px;
-  }
-
-  .btn-form {
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 10px;
+  .sec-contact p {
     font-size: 1.5rem;
-    border-style: none;
+    width: 90%;
+    padding-left: 10px;
   }
 
-  .social-list li {
-    font-size: 2.5rem;
-    padding: 10px;
-    margin-left: 20px;
-    display: inline;
+  #bt {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 20%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .page-list {
+    display: none;
+  }
+
+  .social-list {
+    display: none;
+  }
+
+  .sec-contact button {
+    margin-left: 20%;
+    margin-top: 20px;
   }
 
   .fter {
     width: 100vw;
-    height: 40px;
-    font-size: 1rem;
-    align-content: center center;
+    height: 50px;
+    align-content: center;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 20px;
-    color: white;
-    background-color: rgb(0, 0, 0);
+    color: var(--t-white);
+    background-color: var(--t-black);
   }
 
+
+
 }
+
 
 /* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superiores) */
 @media only screen and (min-width: 1200px) {
 
-  html {
+  * {
     padding: 0;
     margin: 0;
   }
@@ -400,7 +340,7 @@
   }
 
   body {
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/backgroundimageyelow.png")
+    background-image: url("/Projects/project002/assets/img/backgroundimageyelow.png")
   }
 
   :root {
@@ -416,6 +356,8 @@
     color: var(--t-black);
   }
   
+
+
   .n-menu {
     display: flex;
     width: 100vw;
@@ -568,6 +510,14 @@
     padding-bottom: 50px;
   }
 
+  #bt {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 20%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
   #sec-two ul {
     padding-left: 20px;
     margin: 0;
@@ -592,42 +542,6 @@
   .social-list li {
     padding: 10px;
     display: inline;
-  }
-
-  .contact-form {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-left: 58%;
-    margin-top: -10%;
-    color: white;
-    background-color: rgba(175, 175, 175, 0.144);
-    border-radius: 10px;
-  }
-
-  .contact-form label {
-    font-size: 1.3rem;
-  }
-
-  .contact-form input {
-    border-style: none;
-    border-radius: 5px;
-  }
-
-  .contact-form textarea {
-    border-style: none;
-    border-radius: 5px;
-  }
-
-  .btn-form {
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 1rem;
-    border-style: none;
   }
 
   .fter {
