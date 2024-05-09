@@ -1,316 +1,643 @@
-html {
-  padding: 0;
-  margin: 0;
-}
+/* Dispositivos extra pequenos (telefones, 600px e inferiores) */
+@media only screen and (max-width: 600px) {
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  nav {
+    width: 100vw;
+  }
 
-body {
-  max-width: 1366vw;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
+  h1 {
+  
+    padding-left: 5px;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.5rem;
-}
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 3rem;
-}
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
 
-h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-}
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
 
-h4 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 3rem;
-}
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
 
-p {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.6rem;
-}
+  :root {
+    --t-white: white;
+    --t-black: black;
+    --c-yellow: #ffee00;
+  }
 
-.montserrat-bg {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
- }
+  .montserrat-bg {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
 
- .montserrat-nm {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
- }
+  .montserrat-nm {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
- .noto-sans-bg {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
- }
+  .noto-sans-bg {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
 
- .noto-sans-nm {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
- }
+  .noto-sans-nm {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
 
- body {
-  background-image: url("https://kreivesler.github.io/Pagina-inicial/img/backgroundimageyelow.png")
- }
+  .n-menu {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background-color: #ccbf0f;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column
+  }
 
- :root {
-  --t-white: white;
-  --t-black: black;
- }
+  .n-menu p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
 
- .t-white {
-  color: var(--t-white);
- }
+  .n-menu a {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
 
- .t-black {
-  color: var(--t-black);
- }
- 
-.n-menu {
-  display: flex;
-  width: 100vw;
-  height: 100px;
-  color: rgb(0, 0, 0);
-  background-color: rgba(29, 29, 31, 0.205);
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
+  .n-menu li {
+    padding: 10px;
+    display: inline;
+    list-style-type: none;
+  }
 
-.n-menu p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
+  .n-menu ul {
+    margin: 0;
+    padding: 0;
+  }
 
-.n-menu a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
+  .t-white {
+    color: var(--t-white);
+  }
 
-.n-menu li {
-  padding: 10px;
-  display: inline;
-  list-style-type: none;
-}
+  .t-black {
+    color: var(--t-black);
+  }
 
-.n-menu ul {
-  margin: 0;
-  padding: 0;
-}
+  #h-main {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--c-yellow);
+  }
 
-.n-menu li:hover {
-  transform: scale(1.1);
-  border-radius: 5px;
-  background-color: rgba(231, 228, 228, 0.356);
-}
+  .container h2 {
+    font-size: 2.8rem;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .container p {
+    font-size: 1.8rem;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    width: 90%;
+  }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0);
-}
+  .container button {
+    margin-left: 20px;
+  }
 
-.container h2 {
-  padding-left: 20px;
-}
-.container p {
-  padding-left: 20px;
-  width: 600px;
-}
+  .btn-main {
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(19, 19, 167);
+  }
 
-.container button {
-  margin-left: 20px;
-}
+  #sec-one {
+    display: flex;
+    width: 100vw;
+    height: 250vh;
+    background-color: rgb(209, 209, 209);
+    flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+  }
 
-#h-main {
-  display: flex;
-  flex-direction: column;
+  #sec-one h2 {
+    font-size: 2.8rem;
+  }
+
+  .d-grid {
+    display: grid;
+    padding-top: 30px;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+
+  .grid-item {
+    width: 80%;
+    height: 500px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 10px;
+  }
+
+  .img-grid {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 35%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid-item h3 {
+    font-size: 2.3rem;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .grid-item p {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+
+  .grid-item:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  #sec-two {
+    display: flex;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/img001.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  #sec-two h4 {
+    padding-left: 20px;
+  }
+
+  #sec-two p {
+    font-size: 1.8rem;
+    width: 95%;
+    height: 50%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+
+  #sec-two ul {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  #sec-two li {
+    list-style-type: none;
+  }
+
+  #sec-two a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    width: 500px;
+    height: 720px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    background-color: rgba(175, 175, 175, 0.144);
+    border-radius: 10px;
+    align-content: center center; 
+  }
+
+  .contact-form label {
+    font-size: 2.5rem;
+    padding-left: 20px;
+  }
+
+  .contact-form input {
+    width: 80%;
+    height: 50px;
+    margin-left: 20px;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .contact-form input::placeholder {
+    font-size: 1.8rem;
+  }
+
+  .contact-form textarea {
+    width: 80%;
+    margin-left: 20px;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .btn-form {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-style: none;
+  }
+
+  .social-list li {
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-left: 20px;
+    display: inline;
+  }
+
+  .fter {
+    width: 100vw;
+    height: 40px;
+    font-size: 1rem;
+    align-content: center center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
+
 }
 
-.btn-main {
-  cursor: pointer;
-  color: white;
-  font-size: 30px;
-  width: 300px;
-  height: 40px;
-  border-radius: 10px;
-  border-style: none;
-  background-color: rgb(19, 19, 167);
-}
+/* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superiores) */
+@media only screen and (min-width: 1200px) {
 
-.btn-main:hover {
-  transform: scale(1.1);
-  background-color: rgb(14, 14, 77);
-}
+  html {
+    padding: 0;
+    margin: 0;
+  }
 
-#sec-one {
-  display: flex;
-  flex-direction: column;
+  body {
+    max-width: 1366vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .montserrat-bg {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .montserrat-nm {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .noto-sans-bg {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
+
+  .noto-sans-nm {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
+
+  body {
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/backgroundimageyelow.png")
+  }
+
+  :root {
+    --t-white: white;
+    --t-black: black;
+  }
+
+  .t-white {
+    color: var(--t-white);
+  }
+
+  .t-black {
+    color: var(--t-black);
+  }
+  
+  .n-menu {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(29, 29, 31, 0.205);
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.d-grid {
-  display: grid;
-  padding-top: 30px;
-  align-content: space-between;
-  justify-content: center;
-  align-items: center;
-  justify-items: normal;
-  box-sizing: border-box;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
+  .n-menu p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
 
-.grid-item {
-  width: 300px;
-  height: 400px;
-  background-color: white;
-  border-radius: 10px;
-}
+  .n-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
 
-.grid-item:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
-}
+  .n-menu li {
+    padding: 10px;
+    display: inline;
+    list-style-type: none;
+  }
 
-.grid-item h3 {
-  font-size: 1.8rem;
-  padding-top: 10px;
-  padding-left: 20px;
-}
+  .n-menu ul {
+    margin: 0;
+    padding: 0;
+  }
 
-.grid-item p {
-  font-size: 1.2rem;
-  width: 90%;
-}
+  .n-menu li:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: rgba(231, 228, 228, 0.356);
+  }
 
-.img-grid {
-  width: 100px;
-  height: 100px;
-  padding-left: 35%;
-  background-size: cover;
-  background-position: center;
-}
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+  }
 
-#sec-two {
-  display: flex;
-  padding-top: 10px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start;
-}
+  .container h2 {
+    padding-left: 20px;
+  }
+  .container p {
+    padding-left: 20px;
+    width: 600px;
+  }
 
-#sec-two h4 {
-  padding-left: 20px;
-}
+  .container button {
+    margin-left: 20px;
+  }
 
-#sec-two p {
-  width: 50%;
-  height: 50%;
-  padding-left: 20px;
-  padding-bottom: 50px;
-}
+  #h-main {
+    display: flex;
+    flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+  }
 
-#sec-two ul {
-  padding-left: 20px;
-  margin: 0;
-  margin-bottom: 40px;
-}
+  .btn-main {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(19, 19, 167);
+  }
 
-#sec-two li {
-  list-style-type: none;
-}
+  .btn-main:hover {
+    transform: scale(1.1);
+    background-color: rgb(14, 14, 77);
+  }
 
-#sec-two a {
-  text-decoration: none;
-  font-size: 1.2rem;
-}
+  #sec-one {
+    display: flex;
+    flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+  }
 
-.social-list {
-  position: absolute;
-  margin-top: 42%;
-  margin-left: 38%;
-}
+  .d-grid {
+    display: grid;
+    padding-top: 30px;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    justify-items: normal;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
 
-.social-list li {
-  padding: 10px;
-  display: inline;
-}
+  .grid-item {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+  }
 
-.contact-form {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  padding-left: 20px;
-  padding-top: 10px;
-  margin-left: 58%;
-  margin-top: -10%;
-  color: white;
-  background-color: rgba(175, 175, 175, 0.144);
-  border-radius: 10px;
-}
+  .grid-item:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  }
 
-.contact-form label {
-  font-size: 1.3rem;
-}
+  .grid-item h3 {
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
 
-.contact-form input {
-  border-style: none;
-  border-radius: 5px;
-}
+  .grid-item p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
 
-.contact-form textarea {
-  border-style: none;
-  border-radius: 5px;
-}
+  .img-grid {
+    width: 100px;
+    height: 100px;
+    padding-left: 35%;
+    background-size: cover;
+    background-position: center;
+  }
 
-.btn-form {
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: 1rem;
-  border-style: none;
-}
+  #sec-two {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-.fter {
-  width: 100vw;
-  height: 40px;
-  font-size: 1rem;
-  align-content: center center;
-  text-align: center;
-  padding-left: 20px;
-  color: white;
-  background-color: rgb(0, 0, 0);
-}
+  #sec-two h4 {
+    padding-left: 20px;
+  }
 
+  #sec-two p {
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+
+  #sec-two ul {
+    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  #sec-two li {
+    list-style-type: none;
+  }
+
+  #sec-two a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .social-list {
+    position: absolute;
+    margin-top: 42%;
+    margin-left: 38%;
+  }
+
+  .social-list li {
+    padding: 10px;
+    display: inline;
+  }
+
+  .contact-form {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 58%;
+    margin-top: -10%;
+    color: white;
+    background-color: rgba(175, 175, 175, 0.144);
+    border-radius: 10px;
+  }
+
+  .contact-form label {
+    font-size: 1.3rem;
+  }
+
+  .contact-form input {
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .contact-form textarea {
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .btn-form {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-style: none;
+  }
+
+  .fter {
+    width: 100vw;
+    height: 40px;
+    font-size: 1rem;
+    align-content: center center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
+}
