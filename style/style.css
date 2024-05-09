@@ -219,7 +219,7 @@
 
   #sec-two {
     display: flex;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/style/img/img001.png");
+    background-color: black;
     background-size: cover;
     background-position: center;
     padding-top: 10px;
