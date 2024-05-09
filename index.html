@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kr Riley Soluções</title>
 
-  <link rel="stylesheet" href="https://kreivesler.github.io/Pagina-inicial/style/style.css">
+  <link rel="stylesheet" href="/Projects/project002/assets/styles/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,29 +16,32 @@
 
 </head>
 <body>
+  <header class="h-menu">
   <nav class="n-menu">
     <h1 class="montserrat-bg">Kr Riley Soluções</h1>
-    <p class="noto-sans-nm">Seu sucesso começa aqui!</p>
-    <ul>
-      <li><a class="noto-sans-nm" href="#">Pagina inicial</a></li>
-      <li><a class="noto-sans-nm" href="#">Curso de Informática</a></li>
-      <li><a class="noto-sans-nm" href="#">Tirar dúvidas</a></li>
-      <li><a class="noto-sans-nm" href="#">Contato</a></li>
+    <p class="noto-sans-nm p-menu">Seu sucesso começa aqui!</p>
+    <ul class="ul-menu">
+      <li><a class="noto-sans-nm" href="#h-main">Início</a></li>
+      <li>
+        <a class="noto-sans-nm" href="#sec-one">Serviços</a>
+      </li>
+      <li><a class="noto-sans-nm" href="#sec-two">Contato</a></li>
     </ul>
   </nav>
-  <header class="container" id="h-main">
+  </header>
+  <section class="container sec-one" id="h-main">
     <h2 class="montserrat-bg t-black">Seu sucesso começa aqui!</h2>
     <p class="noto-sans-nm t-black">Oferecemos curso de informática essencial e pacote office.
       Além disso, criamos sites de alta qualidade e impacto,
       focados em Landing pages que impulsionam o sucesso online de nossos clientes.
     </p>
-    <button class="noto-sans-nm btn-main">Entre em contato</button>
-  </header>
-  <section class="container" id="sec-one">
+    <button class="noto-sans-nm btn-main" id="btn">Entre em contato</button>
+  </section>
+  <section class="container sec-two" id="sec-one">
     <h2 class="montserrat-bg t-black">Vantagem em nossos serviços</h2>
     <div class="d-grid">
       <div class="grid-item">
-        <img class="img-grid" src="https://kreivesler.github.io/Pagina-inicial/img/seo.png" alt="">
+        <img class="img-grid" src="/Projects/project002/assets/img/seo.png" alt="">
         <h3 class="montserrat-bg">Otimização em SEO</h3>
         <p class="noto-sans-nm">
           Nossos sites são desenvolvidos totalmente configurados em SEO de alta qualidade para que
@@ -46,7 +49,7 @@
         </p>
       </div>
       <div class="grid-item">
-        <img class="img-grid" src="https://kreivesler.github.io/Pagina-inicial/img/user-engagement.png" alt="">
+        <img class="img-grid" src="/Projects/project002/assets/img/user-engagement.png" alt="">
         <h3 class="montserrat-bg">Conversão de leads</h3>
         <p class="noto-sans-nm">
           Para converter seu lead utilizamos de textos persuasivos e condizentes com seu produto/serviço ofertado.
@@ -54,7 +57,7 @@
         </p>
       </div>
       <div class="grid-item">
-        <img class="img-grid" src="https://kreivesler.github.io/Pagina-inicial/img/action.png" alt="">
+        <img class="img-grid" src="/Projects/project002/assets/img/action.png" alt="">
         <h3 class="montserrat-bg">Call to actions</h3>
         <p class="noto-sans-nm">
           Desenvolvemos botões visualmente atratívos e estratégicamente posicionados ao longo da página,
@@ -62,7 +65,7 @@
         </p>
       </div>
       <div class="grid-item">
-        <img class="img-grid" src="https://kreivesler.github.io/Pagina-inicial/img/responsive.png" alt="">
+        <img class="img-grid" src="/Projects/project002/assets/img/responsive.png" alt="">
         <h3 class="montserrat-bg">Design Responsivo</h3>
         <p class="noto-sans-nm">
           Nossos sites são visualmente atraentes e otimizados para dispositivos móveis 
@@ -71,46 +74,33 @@
       </div>
     </div>
   </section>
-  <section class="container" id="sec-two">
+  <section class="container sec-contact" id="sec-two">
     <h4 class="montserrat-bg t-white">Presença Online Profíssional</h4>
     <p class="noto-sans-nm t-white">Desenvolvemos sites que reflitam a identidade e os objetivos da sua empresa
       garantindo presença online profissional que impressionará seus clientes e ajudará a expandir seus negócios.
       Todos os sites que desenvolvemos são responsivos, garantindo uma experiência de usuário consistente em dispositivos móveis, tablets e desktops. 
       Isso significa que seu site será acessível e funcional em qualquer dispositivo, aumentando seu alcance e impacto online.
     </p>
-    <form class="contact-form" action="#" method="post">
-      <label class="noto-sans-nm" for="nome">Nome:</label><br>
-      <input class="noto-sans-nm" type="text" id="nome" name="nome" placeholder="Escreva seu nome" required><br><br>
-
-      <label class="noto-sans-nm" for="email">Email:</label><br>
-      <input class="noto-sans-nm" type="email" id="email" name="email" placeholder="Escreva seu email" required><br><br>
-
-      <label class="noto-sans-nm" for="assunto">Assunto:</label><br>
-      <input class="noto-sans-nm" type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" required><br><br>
-
-      <label class="noto-sans-nm" for="mensagem">Mensagem:</label><br>
-      <textarea class="noto-sans-nm" id="mensagem" name="mensagem" rows="10" cols="50" required></textarea><br><br>
-
-      <input class="btn-main btn-form noto-sans-nm" type="submit" value="Enviar mensagem">
-    </form>
-    <div>
+    <a href="https://wa.me/31995341667" class="noto-sans-nm btn-main" id="bt">Iniciar Conversa</a>
+    <div class="page-list">
       <ul>
         <li><a class="noto-sans-nm t-white" href="#">Pagina inicial</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Curso de Informática</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Tirar dúvidas</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Contato</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Política de privacidade</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Política de pagamento</a></li>
+        <li><a class="noto-sans-nm t-white" href="#">Serviços</a></li>
+        <li><a class="noto-sans-nm t-white" href="">Tirar dúvidas</a></li>
+        <li><a class="noto-sans-nm t-white" href="">Contato</a></li>
+        <li><a class="noto-sans-nm t-white" href="">Política de privacidade</a></li>
+        <li><a class="noto-sans-nm t-white" href="">Política de pagamento</a></li>
       </ul>
     </div>
     <div class="social-list">
       <ul>
-        <li><a class="noto-sans-nm t-white" href="#">Facebook</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Instagram</a></li>
-        <li><a class="noto-sans-nm t-white" href="#">Whatsapp</a></li>
+        <li><a class="noto-sans-nm t-white" href="https://www.rileysolucoes.blog.br">Nosso blog</a></li>
+        <li><a class="noto-sans-nm t-white" href="https://www.instagram.com/kreivesler_oficial/">Instagram</a></li>
+        <li><a class="noto-sans-nm t-white" href="https://wa.me/31995341667">Whatsapp</a></li>
       </ul>
     </div>
   </section>
   <footer class="fter noto-sans-nm">2024 Kr Riley Soluções</footer>
+  <script src="/Projects/project002/assets/js/script.js"></script>
 </body>
 </html>
