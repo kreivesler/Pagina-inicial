@@ -1,6 +1,5 @@
 /* Dispositivos extra pequenos (telefones, 600px e inferiores) */
 @media only screen and (max-width: 600px) {
-  /* Dispositivos extra pequenos (telefones, 600px e inferiores) */
   html {
     padding: 0;
     margin: 0;
@@ -94,11 +93,12 @@
 
   .h-menu {
     width: 100vw;
+    max-width: 600px;
     height: 50px;
     background-color: rgb(179, 167, 12);
   }
 
-    .n-menu h1 {
+  .n-menu h1 {
     padding-top: 15px;
     padding-left: 10px;
     text-align: center;
@@ -133,6 +133,7 @@
 
   .sec-one {
     width: 100vw;
+    max-width: 600px;
     height: 500px;
     background-color: #ffee00;
   }
@@ -168,6 +169,7 @@
 
   .sec-two {
     width: 100vw;
+    max-width: 600px;
     height: 1950px;
     background-color: rgb(221, 221, 220);
   }
@@ -221,6 +223,7 @@
 
   .sec-contact {
     width: 100vw;
+    max-width: 600px;
     height: 800px;
     background-color: rgb(47, 65, 92);
   }
@@ -261,6 +264,7 @@
 
   .fter {
     width: 100vw;
+    max-width: 600px;
     height: 50px;
     align-content: center;
     text-align: center;
@@ -269,9 +273,7 @@
   }
 
 
-
 }
-
 
 /* Dispositivos pequenos (tablets retratos e telefones grandes, 600px e superiores) */
 @media only screen and (min-width: 600px) {
@@ -368,12 +370,13 @@
 
   .h-menu {
     width: 100vw;
-    height: 50px;
-    background-color: rgb(179, 167, 12);
+    max-width: 768px;
+    height: 110px;
+    background-color: rgb(162, 167, 9);
   }
 
   .n-menu h1 {
-    padding-top: 0;
+    padding-top: 15px;
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
@@ -381,22 +384,21 @@
   }
 
   .p-menu {
-    display: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   .n-menu {
     display: flex;
     justify-content: center;
     justify-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 
   }
 
   .ul-menu {
-    padding-right: 10px;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin: 0;
     padding-left: 0;
     display: inline-flex;
     list-style-type: none;
@@ -404,14 +406,15 @@
 
   .ul-menu a {
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     color: var(--t-black);
   }
 
   .sec-one {
     width: 100vw;
+    max-width: 768px;
     height: 500px;
-    background-color: #ffee00;
+    background-color: #ffee06;
   }
 
   .sec-one h2 {
@@ -445,13 +448,14 @@
 
   .sec-two {
     width: 100vw;
+    max-width: 768px;
     height: 1950px;
     background-color: rgb(221, 221, 220);
   }
 
   .sec-two h2 {
-    font-size: 2.8rem;
-    padding-left: 10px;
+    font-size: 2.5rem;
+    padding-left: 5%;
   }
 
   .d-grid {
@@ -473,22 +477,26 @@
     justify-content: center;
     background-color: var(--t-white);
     border-radius: 10px;
+    box-sizing: border-box;
   }
 
   .img-grid {
-    display: none;
+    padding-left: 40%;
+    width: 100px;
+    height: 100px;
   }
 
   .grid-item h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 5px;
     padding-top: 0;
   }
 
   .grid-item p {
-    font-size: 1.7rem;
-    width: 300px;
+    font-size: 1.5rem;
+    width: 90%;
+    height: 250px;
   }
 
   .grid-item:hover {
@@ -498,25 +506,26 @@
 
   .sec-contact {
     width: 100vw;
+    max-width: 600px;
     height: 600px;
     background-color: rgb(47, 65, 92);
   }
 
   .sec-contact h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-top: 10px;
     padding-left: 10px;
   }
 
   .sec-contact p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 90%;
     padding-left: 10px;
   }
 
   #bt {
     position: absolute;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 10%;
     text-decoration: none;
     text-align: center;
@@ -538,6 +547,7 @@
 
   .fter {
     width: 100vw;
+    max-width: 768px;
     height: 50px;
     align-content: center;
     text-align: center;
@@ -549,27 +559,27 @@
 
 }
 
-
-
-/* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superiores) */
-@media only screen and (min-width: 1200px) {
-
-  * {
+/* Dispositivos médios (tablets em paisagem, 768px e superiores) */
+@media only screen and (min-width: 768px) {
+  html {
     padding: 0;
     margin: 0;
   }
 
   body {
-    max-width: 1366vw;
+    max-width: 768px;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   h1 {
+
+    padding-left: 5px;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.5rem;
   }
 
   h2 {
@@ -593,7 +603,13 @@
   p {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  :root {
+    --t-white: white;
+    --t-black: black;
+    --c-yellow: #ffee00;
   }
 
   .montserrat-bg {
@@ -628,13 +644,335 @@
     "wdth" 100;
   }
 
+  .t-white {
+    color: var(--t-white);
+  }
+
+  .t-black {
+    color: var(--t-black);
+  }
+
+  .h-menu {
+    width: 100vw;
+    max-width: 992px;
+    height: 110px;
+    background-color: rgb(162, 167, 9);
+  }
+
+  .n-menu h1 {
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--t-black);
+  }
+
+  .p-menu {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .n-menu {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+
+  .ul-menu {
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  .ul-menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--t-black);
+  }
+
+  .ul-menu a:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: rgba(231, 228, 228, 0.356);
+  }
+
+  .sec-one {
+    width: 100vw;
+    max-width: 992px;
+    height: 500px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sec-one h2 {
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .sec-one p {
+    font-size: 1.8rem;
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  .sec-one button {
+    margin-left: 10%;
+  }
+
+  .btn-main {
+    width: 300px;
+    height: 50px;
+    color: var(--t-white);
+    font-size: 2rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(19, 19, 167);
+  }
+
+  .btn-main:hover {
+    transform: scale(1.1);
+    background-color: blue;
+  }
+
+  .sec-two {
+    width: 100vw;
+    max-width: 992px;
+    height: 1020px;
+    background-color: rgb(221, 221, 220);
+  }
+
+  .sec-two h2 {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-bottom: 10px;
+  }
+
+  .d-grid {
+    display: grid;
+    align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+  }
+  
+  .grid-item {
+    width: 80%;
+    height: 440px;
+    padding-left: 10px;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--t-white);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .img-grid {
+    padding-left: 40%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-item h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+  }
+
+  .grid-item p {
+    font-size: 1.5rem;
+    width: 90%;
+    height: 250px;
+  }
+
+  .grid-item:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sec-contact {
+    width: 100vw;
+    max-width: 992px;
+    height: 600px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sec-contact h4 {
+    font-size: 2.8rem;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .sec-contact p {
+    font-size: 1.5rem;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  #bt {
+    position: absolute;
+    margin-left: 26%;
+    margin-top: 5%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .page-list {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .page-list ul {
+    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .page-list li {
+    list-style-type: none;
+  }
+
+  .page-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .social-list {
+    display: block;
+  }
+
+  .social-list {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 23%;
+  }
+
+  .social-list li {
+    padding: 10px;
+    display: inline;
+  }
+
+  .social-list a {
+    text-decoration: none;
+  }
+
+  .sec-contact button {
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+
+  .fter {
+    width: 100vw;
+    max-width: 992px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    color: var(--t-white);
+    background-color: var(--t-black);
+  }
+
+
+
+}
+
+
+/* Dispositivos grandes (laptops/desktops, 992px e superiores) */
+@media only screen and (min-width: 992px) {
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
   body {
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/backgroundimageyelow.png")
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  h1 {
+
+    padding-left: 5px;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
   }
 
   :root {
     --t-white: white;
     --t-black: black;
+    --c-yellow: #ffee00;
+  }
+
+  .montserrat-bg {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .montserrat-nm {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .noto-sans-bg {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
+
+  .noto-sans-nm {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
   }
 
   .t-white {
@@ -644,80 +982,86 @@
   .t-black {
     color: var(--t-black);
   }
-  
 
-
-  .n-menu {
-    display: flex;
+  .h-menu {
     width: 100vw;
-    height: 100px;
-    color: rgb(0, 0, 0);
-    background-color: rgba(29, 29, 31, 0.205);
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
+    height: 110px;
+    background-color: rgb(162, 167, 9);
   }
 
-  .n-menu p {
+  .n-menu h1 {
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--t-black);
+  }
+
+  .p-menu {
     font-size: 1rem;
     margin-bottom: 10px;
   }
+  .n-menu {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 
-  .n-menu a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
   }
 
-  .n-menu li {
-    padding: 10px;
-    display: inline;
+  .ul-menu {
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
     list-style-type: none;
   }
 
-  .n-menu ul {
-    margin: 0;
-    padding: 0;
+  .ul-menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--t-black);
   }
 
-  .n-menu li:hover {
+  .ul-menu a:hover {
     transform: scale(1.1);
     border-radius: 5px;
     background-color: rgba(231, 228, 228, 0.356);
   }
 
-  .container {
+  .sec-one {
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0);
+    max-width: 1200px;
+    height: 500px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .container h2 {
-    padding-left: 20px;
-  }
-  .container p {
-    padding-left: 20px;
-    width: 600px;
+  .sec-one h2 {
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
-  .container button {
-    margin-left: 20px;
+  .sec-one p {
+    font-size: 1.8rem;
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 40px;
   }
 
-  #h-main {
-    display: flex;
-    flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: flex-start;
+  .sec-one button {
+    margin-left: 10%;
   }
 
   .btn-main {
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
     width: 300px;
-    height: 40px;
+    height: 50px;
+    color: var(--t-white);
+    font-size: 2rem;
     border-radius: 10px;
     border-style: none;
     background-color: rgb(19, 19, 167);
@@ -725,34 +1069,62 @@
 
   .btn-main:hover {
     transform: scale(1.1);
-    background-color: rgb(14, 14, 77);
+    background-color: blue;
   }
 
-  #sec-one {
-    display: flex;
-    flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
+  .sec-two {
+    width: 100vw;
+    max-width: 1200px;
+    height: 1020px;
+    background-color: rgb(221, 221, 220);
+  }
+
+  .sec-two h2 {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-bottom: 10px;
   }
 
   .d-grid {
     display: grid;
-    padding-top: 30px;
-    align-content: space-between;
+    align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+  }
+  
+  .grid-item {
+    width: 80%;
+    height: 440px;
+    padding-left: 10px;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    justify-items: normal;
+    background-color: var(--t-white);
+    border-radius: 10px;
     box-sizing: border-box;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
   }
 
-  .grid-item {
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
+  .img-grid {
+    padding-left: 40%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-item h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+  }
+
+  .grid-item p {
+    font-size: 1.7rem;
+    width: 90%;
+    height: 250px;
   }
 
   .grid-item:hover {
@@ -760,72 +1132,64 @@
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
   }
 
-  .grid-item h3 {
-    font-size: 1.8rem;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-
-  .grid-item p {
-    font-size: 1.2rem;
-    width: 90%;
-  }
-
-  .img-grid {
-    width: 100px;
-    height: 100px;
-    padding-left: 35%;
+  .sec-contact {
+    width: 100vw;
+    max-width: 1200px;
+    height: 600px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
     background-size: cover;
     background-position: center;
   }
 
-  #sec-two {
-    display: flex;
+  .sec-contact h4 {
+    font-size: 2.8rem;
     padding-top: 10px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    padding-left: 10px;
   }
 
-  #sec-two h4 {
-    padding-left: 20px;
-  }
-
-  #sec-two p {
-    width: 50%;
-    height: 50%;
-    padding-left: 20px;
-    padding-bottom: 50px;
+  .sec-contact p {
+    font-size: 1.5rem;
+    width: 90%;
+    padding-left: 10px;
   }
 
   #bt {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 20%;
+    margin-left: 33%;
+    margin-top: 5%;
+    text-decoration: none;
     text-align: center;
     padding-top: 10px;
   }
 
-  #sec-two ul {
+  .page-list {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .page-list ul {
     padding-left: 20px;
     margin: 0;
     margin-bottom: 40px;
   }
 
-  #sec-two li {
+  .page-list li {
     list-style-type: none;
   }
 
-  #sec-two a {
+  .page-list a {
     text-decoration: none;
     font-size: 1.2rem;
   }
 
   .social-list {
+    display: block;
+  }
+
+  .social-list {
     position: absolute;
-    margin-top: 42%;
-    margin-left: 38%;
+    margin-top: -5%;
+    margin-left: 30%;
   }
 
   .social-list li {
@@ -833,15 +1197,357 @@
     display: inline;
   }
 
+  .social-list a {
+    text-decoration: none;
+  }
+
+  .sec-contact button {
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+
   .fter {
     width: 100vw;
-    height: 40px;
-    font-size: 1rem;
-    align-content: center center;
+    max-width: 1200px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    color: var(--t-white);
+    background-color: var(--t-black);
+  }
+
+
+
+
+}
+
+/* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superiores) */
+@media only screen and (min-width: 1200px) {
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    max-width: 1366px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  h1 {
+
+    padding-left: 5px;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  :root {
+    --t-white: white;
+    --t-black: black;
+    --c-yellow: #ffee00;
+  }
+
+  .montserrat-bg {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .montserrat-nm {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .noto-sans-bg {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
+
+  .noto-sans-nm {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+  }
+
+  .t-white {
+    color: var(--t-white);
+  }
+
+  .t-black {
+    color: var(--t-black);
+  }
+
+  .h-menu {
+    width: 100vw;
+    max-width: 1366px;
+    height: 145px;
+    background-color: rgb(162, 167, 9);
+  }
+
+  .n-menu h1 {
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--t-black);
+  }
+
+  .p-menu {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .n-menu {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+
+  .ul-menu {
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  .ul-menu a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--t-black);
+  }
+
+  .ul-menu a:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: rgba(231, 228, 228, 0.356);
+  }
+
+  .sec-one {
+    width: 100vw;
+    max-width: 1366px;
+    height: 600px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sec-one h2 {
+    font-size: 3rem;
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+
+  .sec-one p {
+    font-size: 1.8rem;
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+  }
+
+  .sec-one button {
+    margin-left: 10%;
+  }
+
+  .btn-main {
+    width: 300px;
+    height: 50px;
+    color: var(--t-white);
+    font-size: 2rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(19, 19, 167);
+  }
+
+  .btn-main:hover {
+    transform: scale(1.1);
+    background-color: blue;
+  }
+
+  .sec-two {
+    width: 100vw;
+    max-width: 1366px;
+    height: 600px;
+    background-color: rgb(221, 221, 220);
+  }
+
+  .sec-two h2 {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-bottom: 10px;
+  }
+
+  .d-grid {
+    display: grid;
+    align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+  }
+  
+  .grid-item {
+    width: 90%;
+    height: 440px;
+    padding-left: 2px;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--t-white);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .img-grid {
+    padding-left: 35%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-item h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .grid-item p {
+    font-size: 1.2rem;
+    width: 90%;
+    height: 250px;
+    padding-left: 10px;
+  }
+
+  .grid-item:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sec-contact {
+    width: 100vw;
+    max-width: 1366px;
+    height: 600px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sec-contact h4 {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .sec-contact p {
+    font-size: 1.8rem;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  #bt {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-decoration: none;
     text-align: center;
     padding-top: 10px;
-    padding-left: 20px;
-    color: white;
-    background-color: rgb(0, 0, 0);
   }
+
+  .page-list {
+    display: block;
+    margin-top: 5%;
+  }
+
+  .page-list ul {
+    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .page-list li {
+    list-style-type: none;
+  }
+
+  .page-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .social-list {
+    display: block;
+  }
+
+  .social-list {
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 37%;
+  }
+
+  .social-list li {
+    padding: 10px;
+    display: inline;
+  }
+
+  .social-list a {
+    text-decoration: none;
+  }
+
+  .sec-contact button {
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+
+  .fter {
+    width: 100vw;
+    max-width: 1366px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    color: var(--t-white);
+    background-color: var(--t-black);
+  }
+
+  
 }
