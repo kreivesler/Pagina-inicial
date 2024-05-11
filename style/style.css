@@ -507,7 +507,7 @@
 
   .sec-contact {
     width: 100vw;
-    max-width: 600px;
+    max-width: 768px;
     height: 600px;
     background-color: rgb(47, 65, 92);
   }
