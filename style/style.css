@@ -225,7 +225,7 @@
     width: 100vw;
     max-width: 600px;
     height: 800px;
-    background-color: rgb(47, 65, 92);
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
@@ -509,7 +509,7 @@
     width: 100vw;
     max-width: 768px;
     height: 600px;
-    background-color: rgb(47, 65, 92);
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
@@ -807,9 +807,7 @@
     width: 100vw;
     max-width: 992px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
-    background-size: cover;
-    background-position: center;
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
@@ -1139,9 +1137,7 @@
     width: 100vw;
     max-width: 1200px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
-    background-size: cover;
-    background-position: center;
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
@@ -1473,9 +1469,7 @@
     width: 100vw;
     max-width: 1366px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
-    background-size: cover;
-    background-position: center;
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
