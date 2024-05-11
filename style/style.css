@@ -95,7 +95,7 @@
     width: 100vw;
     max-width: 600px;
     height: 50px;
-    background-color: rgb(179, 167, 12);
+    background-color: rgb(0, 0, 0);
   }
 
   .n-menu h1 {
@@ -103,7 +103,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.1rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -128,14 +128,14 @@
   .ul-menu a {
     text-decoration: none;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .sec-one {
     width: 100vw;
     max-width: 600px;
     height: 500px;
-    background-color: #ffee00;
+    background-image: linear-gradient(135deg, #000000, #3533cd);
   }
 
   .sec-one h2 {
@@ -371,27 +371,28 @@
   .h-menu {
     width: 100vw;
     max-width: 768px;
-    height: 110px;
-    background-color: rgb(162, 167, 9);
+    height: 68px;
+    background-color: rgb(0, 0, 0);
   }
 
   .n-menu h1 {
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 0px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
     font-size: 1rem;
     margin-bottom: 10px;
+    color: var(--t-white);
   }
   .n-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
@@ -407,14 +408,14 @@
   .ul-menu a {
     text-decoration: none;
     padding: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .sec-one {
     width: 100vw;
     max-width: 768px;
     height: 500px;
-    background-color: #ffee06;
+    background-image: linear-gradient(135deg, #000000, #3533cd);
   }
 
   .sec-one h2 {
@@ -655,8 +656,8 @@
   .h-menu {
     width: 100vw;
     max-width: 992px;
-    height: 110px;
-    background-color: rgb(162, 167, 9);
+    height: 70px;
+    background-color: rgb(0, 0, 0);
   }
 
   .n-menu h1 {
@@ -664,18 +665,19 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
     font-size: 1rem;
     margin-bottom: 10px;
+    color: var(--t-white);
   }
   .n-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
@@ -691,7 +693,7 @@
   .ul-menu a {
     text-decoration: none;
     padding: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
@@ -704,7 +706,7 @@
     width: 100vw;
     max-width: 992px;
     height: 500px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-image: url("/Projects/cinformatica/assets/img/secone.png");
     background-size: cover;
     background-position: center;
   }
@@ -805,7 +807,7 @@
     width: 100vw;
     max-width: 992px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
+    background-image: url("/Projects/cinformatica/assets/img/sectwo.png");
     background-size: cover;
     background-position: center;
   }
@@ -986,8 +988,8 @@
   .h-menu {
     width: 100vw;
     max-width: 1200px;
-    height: 110px;
-    background-color: rgb(162, 167, 9);
+    height: 80px;
+    background-color: rgb(0, 0, 0);
   }
 
   .n-menu h1 {
@@ -995,18 +997,19 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.8rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
     font-size: 1rem;
     margin-bottom: 10px;
+    color: var(--t-white);
   }
   .n-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
@@ -1022,7 +1025,7 @@
   .ul-menu a {
     text-decoration: none;
     padding: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
@@ -1035,7 +1038,7 @@
     width: 100vw;
     max-width: 1200px;
     height: 500px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-image: url("/Projects/cinformatica/assets/img/secone.png");
     background-size: cover;
     background-position: center;
   }
@@ -1136,7 +1139,7 @@
     width: 100vw;
     max-width: 1200px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
+    background-image: url("/Projects/cinformatica/assets/img/sectwo.png");
     background-size: cover;
     background-position: center;
   }
@@ -1317,8 +1320,8 @@
   .h-menu {
     width: 100vw;
     max-width: 1366px;
-    height: 145px;
-    background-color: rgb(162, 167, 9);
+    height: 100px;
+    background-color: rgb(0, 0, 0);
   }
 
   .n-menu h1 {
@@ -1326,18 +1329,19 @@
     padding-left: 10px;
     text-align: center;
     font-size: 2rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: var(--t-white);
   }
   .n-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
@@ -1354,7 +1358,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     padding: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
@@ -1367,7 +1371,7 @@
     width: 100vw;
     max-width: 1366px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/secone.png");
+    background-image: url("/Projects/cinformatica/assets/img/secone.png");
     background-size: cover;
     background-position: center;
   }
@@ -1469,7 +1473,7 @@
     width: 100vw;
     max-width: 1366px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/img/sectwo.png");
+    background-image: url("/Projects/cinformatica/assets/img/sectwo.png");
     background-size: cover;
     background-position: center;
   }
