@@ -103,7 +103,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.1rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -128,7 +128,7 @@
   .ul-menu a {
     text-decoration: none;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .poli-container {
@@ -286,7 +286,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -311,7 +311,7 @@
   .ul-menu a {
     text-decoration: none;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .poli-container {
@@ -472,7 +472,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -498,7 +498,7 @@
     text-decoration: none;
     padding: 10px;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
@@ -664,7 +664,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -690,7 +690,7 @@
     text-decoration: none;
     padding: 10px;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
@@ -858,7 +858,7 @@
     padding-left: 10px;
     text-align: center;
     font-size: 1.8rem;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .p-menu {
@@ -884,7 +884,7 @@
     text-decoration: none;
     padding: 10px;
     padding-left: 10px;
-    color: var(--t-black);
+    color: var(--t-white);
   }
 
   .ul-menu a:hover {
