@@ -1517,9 +1517,7 @@
     width: 100vw;
     max-width: 1366px;
     height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/bblue.png");
-    background-size: cover;
-    background-position: center;
+    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
   }
 
   .sec-contact h4 {
