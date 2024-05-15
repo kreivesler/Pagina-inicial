@@ -1,7 +1,7 @@
 const botao = document.getElementById("btn");
 
 botao.addEventListener("click", function() {
-  window.location.href = "https://www.udemy.com/course/curso-de-informatica-essencial/?referralCode=EB7A53AB3FDC78443041";
+  window.location.href = "https://www.asaas.com/c/31ee15ewkbb0vgnq";
 });
 
 document.querySelectorAll('a[href^="#sv"]').forEach(anchor => {
