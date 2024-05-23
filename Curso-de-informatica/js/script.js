@@ -2,7 +2,7 @@ const botoes = document.getElementsByClassName("btn");
 
 for (let i = 0; i < botoes.length; i++) {
   botoes[i].addEventListener("click", function() {
-    window.location.href = "https://www.asaas.com/c/31ee15ewkbb0vgnq";
+    window.location.href = "https://bit.ly/asaas55";
   });
 }
 
