@@ -49,6 +49,8 @@
     --t-white: white;
     --t-black: black;
     --c-yellow: #ffee00;
+    --t-green: rgb(5, 199, 5);
+    --t-red: red;
   }
 
   .montserrat-bg {
@@ -91,199 +93,332 @@
     color: var(--t-black);
   }
 
-  .h-menu {
+  .t-green {
+    color: var(--t-green);
+  }
+
+  .t-red {
+    color: var(--t-red);
+  }
+
+  .hed {
     width: 100vw;
     max-width: 600px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
-  }
-
-  .n-menu h1 {
-    padding-top: 15px;
-    padding-left: 10px;
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--t-white);
-  }
-
-  .p-menu {
-    display: none;
-  }
-  .n-menu {
+    height: 40px;
     display: flex;
-    justify-content: center;
-    justify-items: center;
-
+    flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    background-color: var(--t-black);
   }
 
-  .ul-menu {
-    padding-right: 10px;
-    margin-right: 10px;
-    margin-left: 20px;
-    padding-left: 0;
-    display: inline-flex;
-    list-style-type: none;
+  .hed nav {
+    margin-right: 20px;
   }
-
-  .ul-menu a {
-    text-decoration: none;
-    padding-left: 10px;
+  .hed h1 {
     color: var(--t-white);
+    font-size: 0.9rem;
+    margin-left: 20px;
   }
 
-  .sec-one {
+  .hed ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .hed li {
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .hed ul li a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--t-white);
+    padding: 5px;
+  }
+
+  .hed a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+
+
+  .sec {
     width: 100vw;
     max-width: 600px;
     height: 500px;
-    background-image: linear-gradient(135deg, #000000, #3533cd);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB1.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-one h2 {
-    padding-left: 10px;
-  }
-
-  .sec-one p {
+  .sec h2 {
+    width: 80%;
+    padding-top: 10px;
+    padding-right: 10px;
     font-size: 1.5rem;
-    width: 90%;
-    padding-left: 10px;
   }
 
-  .sec-one button {
-    margin-left: 15%;
+  .sec p {
+    width: 80%;
+    font-size: 1.2rem;
+    padding-right: 10px;
   }
 
-  .btn-main {
+  .btn {
     width: 300px;
     height: 50px;
-    color: var(--t-white);
-    font-size: 2rem;
-    border-radius: 10px;
+    font-size: 1.4rem;
+    margin-right: 15%;
+    margin-top: 2%;
     border-style: none;
-    background-color: rgb(19, 19, 167);
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .btn-main:hover {
-    transform: scale(1.1);
-    background-color: blue;
+  .btn:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-two {
+  .secTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        flex-wrap: nowrap;
     width: 100vw;
     max-width: 600px;
-    height: 1450px;
-    background-color: rgb(221, 221, 220);
+    height: 950px;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-two h2 {
-    font-size: 2.5rem;
-    padding-left: 10px;
-  }
-
-  .d-grid {
+  .grid {
     display: grid;
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 12%;
+    background-color: #ffee0000;
     align-content: center;
       justify-content: center;
       align-items: center;
       justify-items: center;
       box-sizing: border-box;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
   }
 
   .grid-item {
-    width: 70%;
-    height: 300px;
-    padding-left: 10px;
-    align-content: center;
-    justify-content: center;
-    background-color: var(--t-white);
-    border-radius: 10px;
-  }
-
-  .img-grid {
-    display: none;
+    width: 90%;
+    height: 90%;
+    background-color: #00000066;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
   .grid-item h3 {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-top: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    color: var(--t-white);
   }
 
   .grid-item p {
-    font-size: 1.5rem;
-    width: 250px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    width: 90%;
+    color: var(--t-white);
   }
 
   .grid-item:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #ffffff;
   }
 
-  .sec-contact {
+  .txt-st {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 90%;
+  }
+
+  .txt-st h3 {
+    font-size: 2rem;
+    color: var(--t-white);
+  }
+
+  .txt-st p {
+    font-size: 1.2rem;
+    width: 90%;
+    color: var(--t-white);
+  }
+
+  .secAction {
     width: 100vw;
     max-width: 600px;
     height: 800px;
-    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB3.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-contact h4 {
-    font-size: 2.5rem;
-    padding-top: 10px;
-    padding-left: 10px;
+  .secAction ul {
+    padding-left: 20px;
   }
 
-  .sec-contact p {
-    font-size: 1.2rem;
+  .secAction li {
+    font-size: 0.8rem;
+    padding-left: 5px;
+    color: var(--t-white);
+    list-style: none;
+    border-left: #1fa4f7;
+    border-left-style: solid;
+  }
+
+  .txt-ac {
+    width: 45%;
+    height: 400px;
+  }
+
+  .txt-ac h3 {
     width: 90%;
-    padding-left: 10px;
+    font-size: 2rem;
+    color: var(--t-white);
   }
 
-  #bt {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 45%;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
+  .txt-ac p {
+    font-size: 0.9rem;
+    width: 90%;
+    color: var(--t-white);
   }
 
-  .page-list {
-    display: none;
+  .btnTwo {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-style: none;
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .social-list {
-    display: none;
+  .btnTwo:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-contact button {
-    margin-left: 20%;
-    margin-top: 20px;
+  .sec-venda {
+    width: 100vw;
+    max-width: 600px;
+    height: 800px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
   }
 
-  .price {
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 10%;
-  }
-  .price h3 {
+  .sec-venda h4 {
+    color: var(--t-white);
     font-size: 1.8rem;
+    padding-top: 15px;
+    padding-left: 10PX;
   }
 
-  .price p {
+  .sec-venda p {
+    width: 90%;
+    font-size: 1.5rem;
+    color: var(--t-white);
+  }
+
+  .dv-venda{
+    display: flex;
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    margin-top: 70%;
+    margin-left: -20%;
+    background-color: #ffee0000;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    text-align: center;
+    border-left: #1fa4f7;
+    border-left-style: solid;
+  }
+
+  .dv-venda p {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px #000000;
+  }
+
+  .dv-venda button {
+    margin-left: 15%;
+  }
+
+  #sec-ptwo {
+    font-size: 2rem;
+  }
+
+  #sec-pbtn {
     font-size: 0.7rem;
   }
 
+  .n-sec {
+    display: flex;
+    flex-direction: row;
+        align-items: center;
+    position: absolute;
+    margin-top: 720px;
+  }
+
+  .n-sec ul {
+    display: flex;
+        align-items: center;
+  }
+
+  .n-sec li {
+    margin-right: 10px;
+        list-style: none;
+  }
+
+  .n-sec a {
+    text-decoration: none;
+    color: var(--t-white);
+    font-size: 0.9rem;
+  }
+
+  .n-sec a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+  
   .fter {
     width: 100vw;
     max-width: 600px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
-    color: var(--t-white);
+    height: 40px;
     background-color: var(--t-black);
+    color: var(--t-white);
+    text-align: center;
   }
+
 
 
 }
@@ -339,6 +474,8 @@
     --t-white: white;
     --t-black: black;
     --c-yellow: #ffee00;
+    --t-green: rgb(5, 199, 5);
+    --t-red: red;
   }
 
   .montserrat-bg {
@@ -381,206 +518,333 @@
     color: var(--t-black);
   }
 
-  .h-menu {
+  .t-green {
+    color: var(--t-green);
+  }
+
+  .t-red {
+    color: var(--t-red);
+  }
+
+  .hed {
     width: 100vw;
     max-width: 768px;
-    height: 68px;
-    background-color: rgb(0, 0, 0);
-  }
-
-  .n-menu h1 {
-    padding-top: 15px;
-    padding-left: 0px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--t-white);
-  }
-
-  .p-menu {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: var(--t-white);
-  }
-  .n-menu {
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-
+        justify-content: space-between;
+        align-items: center;
+    background-color: var(--t-black);
   }
 
-  .ul-menu {
-    margin: 0;
-    padding-left: 0;
-    display: inline-flex;
-    list-style-type: none;
+  .hed nav {
+    margin-right: 20px;
   }
-
-  .ul-menu a {
-    text-decoration: none;
-    padding: 10px;
+  .hed h1 {
     color: var(--t-white);
+    font-size: 1.2rem;
+    margin-left: 20px;
   }
 
-  .sec-one {
+  .hed ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .hed li {
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .hed ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--t-white);
+    padding: 5px;
+  }
+
+  .hed a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+
+
+  .sec {
     width: 100vw;
     max-width: 768px;
     height: 500px;
-    background-image: linear-gradient(135deg, #000000, #3533cd);
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB1.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-one h2 {
-    padding-left: 10px;
+  .sec h2 {
+    width: 70%;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
   }
 
-  .sec-one p {
-    font-size: 1.8rem;
-    width: 90%;
-    padding-left: 10px;
+  .sec p {
+    width: 60%;
+    font-size: 1.5rem;
+    padding-right: 10px;
   }
 
-  .sec-one button {
-    margin-left: 25%;
-  }
-
-  .btn-main {
+  .btn {
     width: 300px;
     height: 50px;
-    color: var(--t-white);
-    font-size: 2rem;
-    border-radius: 10px;
+    font-size: 1.4rem;
+    margin-right: 15%;
+    margin-top: 2%;
     border-style: none;
-    background-color: rgb(19, 19, 167);
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .btn-main:hover {
-    transform: scale(1.1);
-    background-color: blue;
+  .btn:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-two {
+  .secTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        flex-wrap: nowrap;
     width: 100vw;
     max-width: 768px;
-    height: 1030px;
-    background-color: rgb(221, 221, 220);
+    height: 800px;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-two h2 {
-    font-size: 2.5rem;
-    padding-left: 5%;
-  }
-
-  .d-grid {
+  .grid {
     display: grid;
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 2%;
+    background-color: #ffee0000;
     align-content: center;
       justify-content: center;
       align-items: center;
       justify-items: center;
       box-sizing: border-box;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
   }
 
   .grid-item {
-    width: 70%;
-    height: 200px;
-    padding-left: 10px;
-    align-content: center;
-    justify-content: center;
-    background-color: var(--t-white);
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-
-  .img-grid {
-    padding-left: 40%;
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
+    background-color: #00000066;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
   .grid-item h3 {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-top: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: var(--t-white);
   }
 
   .grid-item p {
-    font-size: 1.5rem;
+    padding-left: 10px;
+    font-size: 1rem;
     width: 90%;
-    height: 100px;
+    color: var(--t-white);
   }
 
   .grid-item:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #ffffff;
   }
 
-  .sec-contact {
-    width: 100vw;
-    max-width: 768px;
-    height: 600px;
-    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
+  .txt-st {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 50%;
   }
 
-  .sec-contact h4 {
-    font-size: 2.5rem;
-    padding-top: 10px;
-    padding-left: 10px;
+  .txt-st h3 {
+    font-size: 2rem;
+    color: var(--t-white);
   }
 
-  .sec-contact p {
+  .txt-st p {
     font-size: 1.2rem;
     width: 90%;
+    color: var(--t-white);
+  }
+
+  .secAction {
+    width: 100vw;
+    max-width: 768px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB3.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .secAction ul {
     padding-left: 10px;
+    width: 90%;
   }
 
-  #bt {
+  .secAction li {
+    font-size: 1.4rem;
+    padding-left: 5px;
+    color: var(--t-white);
+    list-style: none;
+    border-left: #1fa4f7;
+    border-left-style: solid;
+  }
+
+  .txt-ac {
+    width: 45%;
+    height: 400px;
+  }
+
+  .txt-ac h3 {
+    width: 90%;
+    font-size: 2.4rem;
+    color: var(--t-white);
+  }
+
+  .txt-ac p {
+    font-size: 1rem;
+    width: 90%;
+    color: var(--t-white);
+  }
+
+  .btnTwo {
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-style: none;
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
+  }
+
+  .btnTwo:hover {
+    box-shadow: -2px 2px 10px #ffffff;
+  }
+
+  .sec-venda {
+    width: 100vw;
+    max-width: 768px;
+    height: 730px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+  }
+
+  .sec-venda h4 {
+    color: var(--t-white);
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-left: 10PX;
+  }
+
+  .sec-venda p {
+    width: 90%;
+    font-size: 1.5rem;
+    color: var(--t-white);
+  }
+
+  .dv-venda{
+    display: flex;
+    width: 70%;
+    height: 300px;
     position: absolute;
-    margin-left: 28%;
-    margin-top: 28%;
-    text-decoration: none;
+    margin-top: 40%;
+    margin-left: -20%;
+    background-color: #ffee0000;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
     text-align: center;
-    padding-top: 10px;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
-  .page-list {
-    display: none;
+  .dv-venda p {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px #000000;
   }
 
-  .social-list {
-    display: none;
+  .dv-venda button {
+    margin-left: 15%;
   }
 
-  .sec-contact button {
-    margin-left: 20%;
-    margin-top: 20px;
+  #sec-ptwo {
+    font-size: 2rem;
   }
 
-  .price {
+  #sec-pbtn {
+    font-size: 0.7rem;
+  }
+
+  .n-sec {
+    display: flex;
+    flex-direction: row;
+        align-items: center;
     position: absolute;
-    margin-left: 28%;
-    margin-top: 5%;
-  }
-  .price h3 {
-    font-size: 1.8rem;
+    margin-top: 680px;
   }
 
-  .price p {
+  .n-sec ul {
+    display: flex;
+        align-items: center;
+  }
+
+  .n-sec li {
+    margin-right: 10px;
+        list-style: none;
+  }
+
+  .n-sec a {
+    text-decoration: none;
+    color: var(--t-white);
     font-size: 1rem;
   }
 
+  .n-sec a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+  
   .fter {
     width: 100vw;
     max-width: 768px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
-    color: var(--t-white);
+    height: 40px;
     background-color: var(--t-black);
+    color: var(--t-white);
+    text-align: center;
   }
+
 
 
 
@@ -594,7 +858,7 @@
   }
 
   body {
-    max-width: 768px;
+    max-width: 992px;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -637,6 +901,8 @@
     --t-white: white;
     --t-black: black;
     --c-yellow: #ffee00;
+    --t-green: rgb(5, 199, 5);
+    --t-red: red;
   }
 
   .montserrat-bg {
@@ -679,248 +945,333 @@
     color: var(--t-black);
   }
 
-  .h-menu {
+  .t-green {
+    color: var(--t-green);
+  }
+
+  .t-red {
+    color: var(--t-red);
+  }
+
+  .hed {
     width: 100vw;
     max-width: 992px;
-    height: 70px;
-    background-color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    background-color: var(--t-black);
   }
 
-  .n-menu h1 {
-    padding-top: 15px;
-    padding-left: 10px;
-    text-align: center;
+  .hed nav {
+    margin-right: 20px;
+  }
+  .hed h1 {
+    color: var(--t-white);
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  .hed ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .hed li {
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .hed ul li a {
+    text-decoration: none;
     font-size: 1.5rem;
     color: var(--t-white);
+    padding: 5px;
   }
 
-  .p-menu {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: var(--t-white);
-  }
-  .n-menu {
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-
+  .hed a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
   }
 
-  .ul-menu {
-    margin: 0;
-    padding-left: 0;
-    display: inline-flex;
-    list-style-type: none;
-  }
 
-  .ul-menu a {
-    text-decoration: none;
-    padding: 10px;
-    color: var(--t-white);
-  }
-
-  .ul-menu a:hover {
-    transform: scale(1.1);
-    border-radius: 5px;
-    background-color: rgba(231, 228, 228, 0.356);
-  }
-
-  .sec-one {
+  .sec {
     width: 100vw;
     max-width: 992px;
     height: 500px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/secone.png");
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB1.png");
     background-size: cover;
     background-position: center;
   }
 
-  .sec-one h2 {
-    font-size: 2.5rem;
+  .sec h2 {
+    width: 70%;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
   }
 
-  .sec-one p {
-    font-size: 1.8rem;
-    width: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
+  .sec p {
+    width: 60%;
+    font-size: 1.5rem;
+    padding-right: 10px;
   }
 
-  .sec-one button {
-    margin-left: 10%;
-  }
-
-  .btn-main {
+  .btn {
     width: 300px;
     height: 50px;
-    color: var(--t-white);
-    font-size: 2rem;
-    border-radius: 10px;
+    font-size: 1.4rem;
+    margin-right: 15%;
+    margin-top: 2%;
     border-style: none;
-    background-color: rgb(19, 19, 167);
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .btn-main:hover {
-    transform: scale(1.1);
-    background-color: blue;
+  .btn:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-two {
+  .secTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        flex-wrap: nowrap;
     width: 100vw;
     max-width: 992px;
-    height: 800px;
-    background-color: rgb(221, 221, 220);
+    height: 700px;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-two h2 {
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-left: 10%;
-    padding-bottom: 10px;
-  }
-
-  .d-grid {
+  .grid {
     display: grid;
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 2%;
+    background-color: #ffee0000;
     align-content: center;
       justify-content: center;
       align-items: center;
       justify-items: center;
       box-sizing: border-box;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-  }
-  
-  .grid-item {
-    width: 80%;
-    height: 280px;
-    padding-left: 10px;
-    align-content: center;
-    justify-content: center;
-    background-color: var(--t-white);
-    border-radius: 10px;
-    box-sizing: border-box;
+      grid-gap: 5px;
   }
 
-  .img-grid {
-    padding-left: 40%;
-    width: 100px;
-    height: 100px;
+  .grid-item {
+    width: 90%;
+    height: 90%;
+    background-color: #00000066;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
   .grid-item h3 {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-top: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: var(--t-white);
   }
 
   .grid-item p {
-    font-size: 1.5rem;
+    padding-left: 10px;
+    font-size: 1rem;
     width: 90%;
-    height: 150px;
+    color: var(--t-white);
   }
 
   .grid-item:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #ffffff;
   }
 
-  .sec-contact {
+  .txt-st {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 40%;
+  }
+
+  .txt-st h3 {
+    font-size: 2rem;
+    color: var(--t-white);
+  }
+
+  .txt-st p {
+    font-size: 1.2rem;
+    width: 90%;
+    color: var(--t-white);
+  }
+
+  .secAction {
     width: 100vw;
     max-width: 992px;
-    height: 600px;
-    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB3.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-contact h4 {
-    font-size: 2.8rem;
-    padding-top: 10px;
+  .secAction ul {
     padding-left: 10px;
-  }
-
-  .sec-contact p {
-    font-size: 1.5rem;
     width: 90%;
-    padding-left: 10px;
   }
 
-  #bt {
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 22%;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
+  .secAction li {
+    font-size: 1.4rem;
+    padding-left: 5px;
+    color: var(--t-white);
+    list-style: none;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
-  .page-list {
-    display: block;
-    position: absolute;
-    margin-top: 20%;
+  .txt-ac {
+    width: 45%;
+    height: 400px;
   }
 
-  .page-list ul {
-    padding-left: 20px;
-    margin: 0;
-    margin-bottom: 40px;
+  .txt-ac h3 {
+    width: 90%;
+    font-size: 2.4rem;
+    color: var(--t-white);
   }
 
-  .page-list li {
-    list-style-type: none;
+  .txt-ac p {
+    font-size: 1rem;
+    width: 90%;
+    color: var(--t-white);
   }
 
-  .page-list a {
-    text-decoration: none;
+  .btnTwo {
+    width: 250px;
+    height: 50px;
     font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-style: none;
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .social-list {
-    display: block;
+  .btnTwo:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .social-list {
+  .sec-venda {
+    width: 100vw;
+    max-width: 992px;
+    height: 730px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+  }
+
+  .sec-venda h4 {
+    color: var(--t-white);
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
+  .sec-venda p {
+    width: 90%;
+    font-size: 1.5rem;
+    color: var(--t-white);
+  }
+
+  .dv-venda{
+    display: flex;
+    width: 70%;
+    height: 300px;
     position: absolute;
-    margin-top: 35%;
-    margin-left: 28%;
+    margin-top: 40%;
+    margin-left: -20%;
+    background-color: #ffee0000;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    text-align: center;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
-  .social-list li {
-    padding: 10px;
-    display: inline;
+  .dv-venda p {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px #000000;
   }
 
-  .social-list a {
+  .dv-venda button {
+    margin-left: 15%;
+  }
+
+  #sec-ptwo {
+    font-size: 2rem;
+  }
+
+  #sec-pbtn {
+    font-size: 0.7rem;
+  }
+
+  .n-sec {
+    display: flex;
+    flex-direction: row;
+        align-items: center;
+    position: absolute;
+    margin-top: 680px;
+  }
+
+  .n-sec ul {
+    display: flex;
+        align-items: center;
+  }
+
+  .n-sec li {
+    margin-right: 10px;
+        list-style: none;
+  }
+
+  .n-sec a {
     text-decoration: none;
-  }
-
-  .sec-contact button {
-    margin-left: 20%;
-    margin-top: 20px;
-  }
-
-  .price {
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 5%;
-  }
-
-  .price p {
+    color: var(--t-white);
     font-size: 1rem;
   }
 
+  .n-sec a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+  
   .fter {
     width: 100vw;
     max-width: 992px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
-    color: var(--t-white);
+    height: 40px;
     background-color: var(--t-black);
+    color: var(--t-white);
+    text-align: center;
   }
+
 
 
 
@@ -978,6 +1329,8 @@
     --t-white: white;
     --t-black: black;
     --c-yellow: #ffee00;
+    --t-green: rgb(5, 199, 5);
+    --t-red: red;
   }
 
   .montserrat-bg {
@@ -1020,248 +1373,318 @@
     color: var(--t-black);
   }
 
-  .h-menu {
+  .t-green {
+    color: var(--t-green);
+  }
+
+  .t-red {
+    color: var(--t-red);
+  }
+
+  .hed {
     width: 100vw;
     max-width: 1200px;
-    height: 80px;
-    background-color: rgb(0, 0, 0);
-  }
-
-  .n-menu h1 {
-    padding-top: 15px;
-    padding-left: 10px;
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--t-white);
-  }
-
-  .p-menu {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: var(--t-white);
-  }
-  .n-menu {
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-
+        justify-content: space-between;
+        align-items: center;
+    background-color: var(--t-black);
   }
 
-  .ul-menu {
-    margin: 0;
-    padding-left: 0;
-    display: inline-flex;
-    list-style-type: none;
+  .hed nav {
+    margin-right: 20px;
   }
-
-  .ul-menu a {
-    text-decoration: none;
-    padding: 10px;
+  .hed h1 {
     color: var(--t-white);
+    font-size: 1.5rem;
+    margin-left: 20px;
   }
 
-  .ul-menu a:hover {
-    transform: scale(1.1);
-    border-radius: 5px;
-    background-color: rgba(231, 228, 228, 0.356);
+  .hed ul {
+    display: flex;
+    align-items: center;
   }
 
-  .sec-one {
+  .hed li {
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .hed ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--t-white);
+    padding: 5px;
+  }
+
+  .hed a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+
+
+  .sec {
     width: 100vw;
     max-width: 1200px;
-    height: 500px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/secone.png");
+    height: 400px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB1.png");
     background-size: cover;
     background-position: center;
   }
 
-  .sec-one h2 {
-    font-size: 2.5rem;
+  .sec h2 {
+    width: 60%;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2.5rem;
   }
 
-  .sec-one p {
+  .sec p {
+    width: 60%;
     font-size: 1.8rem;
-    width: 50%;
-    padding-left: 10px;
-    margin-bottom: 40px;
+    padding-right: 10px;
   }
 
-  .sec-one button {
-    margin-left: 10%;
-  }
-
-  .btn-main {
-    width: 300px;
+  .btn {
+    width: 400px;
     height: 50px;
-    color: var(--t-white);
-    font-size: 2rem;
-    border-radius: 10px;
+    font-size: 1.8rem;
+    margin-right: 15%;
+    margin-top: 2%;
     border-style: none;
-    background-color: rgb(19, 19, 167);
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .btn-main:hover {
-    transform: scale(1.1);
-    background-color: blue;
+  .btn:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-two {
+  .secTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        flex-wrap: nowrap;
     width: 100vw;
     max-width: 1200px;
-    height: 680px;
-    background-color: rgb(221, 221, 220);
+    height: 800px;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-two h2 {
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-bottom: 10px;
-  }
-
-  .d-grid {
+  .grid {
     display: grid;
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 4%;
+    background-color: #ffee0000;
     align-content: center;
       justify-content: center;
       align-items: center;
       justify-items: center;
       box-sizing: border-box;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-  }
-  
-  .grid-item {
-    width: 80%;
-    height: 255px;
-    padding-left: 10px;
-    align-content: center;
-    justify-content: center;
-    background-color: var(--t-white);
-    border-radius: 10px;
-    box-sizing: border-box;
+      grid-gap: 5px;
   }
 
-  .img-grid {
-    padding-left: 40%;
-    width: 100px;
-    height: 100px;
+  .grid-item {
+    width: 90%;
+    height: 90%;
+    background-color: #00000066;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
   .grid-item h3 {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-top: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.8rem;
+    color: var(--t-white);
   }
 
   .grid-item p {
-    font-size: 1.7rem;
+    padding-left: 10px;
+    font-size: 1.4rem;
     width: 90%;
-    height: 150px;
+    color: var(--t-white);
   }
 
   .grid-item:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #ffffff;
   }
 
-  .sec-contact {
+  .txt-st {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 34%;
+  }
+
+  .txt-st h3 {
+    font-size: 2.5rem;
+    color: var(--t-white);
+  }
+
+  .txt-st p {
+    font-size: 1.8rem;
+    width: 90%;
+    color: var(--t-white);
+  }
+
+  .secAction {
     width: 100vw;
     max-width: 1200px;
-    height: 600px;
-    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB3.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-contact h4 {
-    font-size: 2.8rem;
-    padding-top: 10px;
+  .secAction ul {
     padding-left: 10px;
+    width: 90%;
   }
 
-  .sec-contact p {
+  .secAction li {
+    font-size: 1.8rem;
+    padding-left: 5px;
+    color: var(--t-white);
+    list-style: none;
+    border-left: #1fa4f7;
+    border-left-style: solid;
+  }
+
+  .txt-ac {
+    width: 45%;
+    height: 400px;
+  }
+
+  .txt-ac h3 {
+    width: 90%;
+    font-size: 2.2rem;
+    color: var(--t-white);
+  }
+
+  .txt-ac p {
     font-size: 1.5rem;
     width: 90%;
-    padding-left: 10px;
+    color: var(--t-white);
   }
 
-  #bt {
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 22%;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
+  .sec-venda {
+    width: 100vw;
+    max-width: 1200px;
+    height: 730px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
   }
 
-  .page-list {
-    display: block;
-    position: absolute;
-    margin-top: 20%;
+  .sec-venda h4 {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 2.5rem;
+    padding-top: 15px;
+    padding-left: 15px;
   }
 
-  .page-list ul {
-    padding-left: 20px;
-    margin: 0;
-    margin-bottom: 40px;
+  .sec-venda p {
+    width: 90%;
+    font-size: 1.8rem;
+    color: var(--t-white);
   }
 
-  .page-list li {
-    list-style-type: none;
-  }
-
-  .page-list a {
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-
-  .social-list {
-    display: block;
-  }
-
-  .social-list {
+  .dv-venda{
+    display: flex;
+    width: 50%;
+    height: 300px;
     position: absolute;
     margin-top: 30%;
-    margin-left: 33%;
+    margin-left: -20%;
+    background-color: #ffee0000;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    text-align: center;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
-  .social-list li {
-    padding: 10px;
-    display: inline;
+  .dv-venda p {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000000;
   }
 
-  .social-list a {
-    text-decoration: none;
+  .dv-venda button {
+    margin-left: 15%;
   }
 
-  .sec-contact button {
-    margin-left: 20%;
-    margin-top: 20px;
+  #sec-ptwo {
+    font-size: 2.5rem;
   }
 
-  .price {
+  #sec-pbtn {
+    font-size: 0.9rem;
+  }
+
+  .n-sec {
+    display: flex;
+    flex-direction: row;
+        align-items: center;
     position: absolute;
-    margin-left: 35%;
-    margin-top: 8%;
+    margin-top: 655px;
   }
 
-  .price p {
-    font-size: 1rem;
+  .n-sec ul {
+    display: flex;
+        align-items: center;
   }
 
+  .n-sec li {
+    margin-right: 20px;
+        list-style: none;
+  }
+
+  .n-sec a {
+    text-decoration: none;
+    color: var(--t-white);
+    font-size: 1.5rem;
+  }
+
+  .n-sec a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+  
   .fter {
     width: 100vw;
     max-width: 1200px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
-    color: var(--t-white);
+    height: 40px;
     background-color: var(--t-black);
+    color: var(--t-white);
+    text-align: center;
   }
+
 
 
 
@@ -1319,6 +1742,8 @@
     --t-white: white;
     --t-black: black;
     --c-yellow: #ffee00;
+    --t-green: rgb(5, 199, 5);
+    --t-red: red;
   }
 
   .montserrat-bg {
@@ -1361,113 +1786,118 @@
     color: var(--t-black);
   }
 
-  .h-menu {
+  .t-green {
+    color: var(--t-green);
+  }
+
+  .t-red {
+    color: var(--t-red);
+  }
+
+  .hed {
     width: 100vw;
     max-width: 1366px;
-    height: 100px;
-    background-color: rgb(0, 0, 0);
-  }
-
-  .n-menu h1 {
-    padding-top: 15px;
-    padding-left: 10px;
-    text-align: center;
-    font-size: 2rem;
-    color: var(--t-white);
-  }
-
-  .p-menu {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--t-white);
-  }
-  .n-menu {
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-
+        justify-content: space-between;
+        align-items: center;
+    background-color: var(--t-black);
   }
 
-  .ul-menu {
-    margin: 0;
-    padding-left: 0;
-    display: inline-flex;
-    list-style-type: none;
+  .hed nav {
+    margin-right: 20px;
   }
-
-  .ul-menu a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 10px;
+  .hed h1 {
     color: var(--t-white);
+    font-size: 1.5rem;
+    margin-left: 20px;
   }
 
-  .ul-menu a:hover {
-    transform: scale(1.1);
-    border-radius: 5px;
-    background-color: rgba(231, 228, 228, 0.356);
+  .hed ul {
+    display: flex;
+    align-items: center;
   }
 
-  .sec-one {
+  .hed li {
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .hed ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--t-white);
+    padding: 5px;
+  }
+
+  .hed a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+
+
+  .sec {
     width: 100vw;
     max-width: 1366px;
-    height: 600px;
-    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/secone.png");
+    height: 500px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB1.png");
     background-size: cover;
     background-position: center;
   }
 
-  .sec-one h2 {
-    font-size: 3rem;
-    padding-top: 40px;
-    padding-left: 10px;
+  .sec h2 {
+    width: 60%;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 2.5rem;
   }
 
-  .sec-one p {
-    font-size: 1.8rem;
-    width: 50%;
-    padding-left: 10px;
-    margin-bottom: 50px;
+  .sec p {
+    width: 750px;
   }
 
-  .sec-one button {
-    margin-left: 10%;
-  }
-
-  .btn-main {
-    width: 300px;
+  .btn {
+    width: 400px;
     height: 50px;
-    color: var(--t-white);
-    font-size: 2rem;
-    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-right: 15%;
+    margin-top: 2%;
     border-style: none;
-    background-color: rgb(19, 19, 167);
+    color: #ffffff;
+    background-color: #1fa4f7;
+    cursor: pointer;
   }
 
-  .btn-main:hover {
-    transform: scale(1.1);
-    background-color: blue;
+  .btn:hover {
+    box-shadow: -2px 2px 10px #ffffff;
   }
 
-  .sec-two {
+  .secTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        flex-wrap: nowrap;
     width: 100vw;
     max-width: 1366px;
-    height: 400px;
-    background-color: rgb(221, 221, 220);
+    height: 600px;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-two h2 {
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-left: 15%;
-    padding-bottom: 10px;
-  }
-
-  .d-grid {
+  .grid {
     display: grid;
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: -6%;
+    background-color: #ffee0000;
     align-content: center;
       justify-content: center;
       align-items: center;
@@ -1476,135 +1906,185 @@
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
   }
-  
+
   .grid-item {
     width: 90%;
-    height: 250px;
-    padding-left: 2px;
-    align-content: center;
-    justify-content: center;
-    background-color: var(--t-white);
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-
-  .img-grid {
-    padding-left: 35%;
-    width: 100px;
-    height: 100px;
+    height: 90%;
+    background-color: #00000066;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
   .grid-item h3 {
-    font-size: 1.8rem;
-    margin-top: 0;
-    margin-bottom: 5px;
     padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: var(--t-white);
   }
 
   .grid-item p {
-    font-size: 1.2rem;
-    width: 90%;
-    height: 100px;
     padding-left: 10px;
+    font-size: 1rem;
+    width: 90%;
+    color: var(--t-white);
   }
 
   .grid-item:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #ffffff;
   }
 
-  .sec-contact {
+  .txt-st {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    margin-top: 15%;
+  }
+
+  .txt-st h3 {
+    font-size: 2.5rem;
+    color: var(--t-white);
+  }
+
+  .txt-st p {
+    font-size: 1.5rem;
+    width: 700px;
+    color: var(--t-white);
+  }
+
+  .secAction {
     width: 100vw;
     max-width: 1366px;
-    height: 600px;
-    background-image: radial-gradient(circle at 50% 50%, #000000, #3533cd);
+    height: 745px;
+    display: flex;
+    flex-direction: column;
+        align-items: flex-end;
+    padding-top: 20px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB3.png");
+    background-size: cover;
+    background-position: center;
   }
 
-  .sec-contact h4 {
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-
-  .sec-contact p {
+  .secAction li {
     font-size: 1.8rem;
+    padding-left: 5px;
+    color: var(--t-white);
+    list-style: none;
+    border-left: #1fa4f7;
+    border-left-style: solid;
+  }
+
+  .txt-ac {
+    width: 45%;
+    height: 400px;
+  }
+
+  .txt-ac h3 {
     width: 90%;
-    padding-left: 10px;
+    font-size: 2.2rem;
+    color: var(--t-white);
   }
 
-  #bt {
+  .txt-ac p {
+    font-size: 1.5rem;
+    width: 90%;
+    color: var(--t-white);
+  }
+
+  .sec-venda {
+    width: 100vw;
+    max-width: 1366px;
+    height: 690px;
+    background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+  }
+
+  .sec-venda h4 {
+    color: var(--t-white);
+    font-size: 2.5rem;
+    padding-top: 15px;
+  }
+
+  .sec-venda p {
+    width: 80%;
+    color: var(--t-white);
+  }
+
+  .dv-venda{
+    display: flex;
+    width: 40%;
+    height: 300px;
     position: absolute;
-    margin-left: 40%;
-    margin-top: 15%;
-    text-decoration: none;
+    margin-top: 25%;
+    margin-left: -40%;
+    background-color: #ffee0000;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
     text-align: center;
-    padding-top: 10px;
+    border-left: #1fa4f7;
+    border-left-style: solid;
   }
 
-  .page-list {
-    display: block;
-    position: absolute;
-    margin-top: 15%;
+  .dv-venda p {
+    width: 90%;
+    color: var(--t-white);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000000;
   }
 
-  .page-list ul {
-    padding-left: 20px;
-    margin: 0;
-    margin-bottom: 10px;
+  .dv-venda button {
+    margin-left: 15%;
   }
 
-  .page-list li {
-    list-style-type: none;
+  #sec-ptwo {
+    font-size: 2.8rem;
   }
 
-  .page-list a {
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-
-  .social-list {
-    display: block;
-  }
-
-  .social-list {
-    position: absolute;
-    margin-top: 24%;
-    margin-left: 37%;
-  }
-
-  .social-list li {
-    padding: 10px;
-    display: inline;
-  }
-
-  .social-list a {
-    text-decoration: none;
-  }
-
-  .sec-contact button {
-    margin-left: 20%;
-    margin-top: 20px;
-  }
-
-  .price {
-    position: absolute;
-    margin-left: 38%;
-    margin-top: 2%;
-  }
-
-  .price p {
+  #sec-pbtn {
     font-size: 1rem;
   }
 
+  .n-sec {
+    display: flex;
+    flex-direction: row;
+        align-items: center;
+    position: absolute;
+    margin-top: 48%;
+  }
+
+  .n-sec ul {
+    display: flex;
+        align-items: center;
+  }
+
+  .n-sec li {
+    margin-right: 20px;
+        list-style: none;
+  }
+
+  .n-sec a {
+    text-decoration: none;
+    color: var(--t-white);
+    font-size: 1.2rem;
+  }
+
+  .n-sec a:hover {
+    border-bottom: #1fa4f7;
+    border-bottom-style: solid;
+  }
+  
   .fter {
     width: 100vw;
     max-width: 1366px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
-    color: var(--t-white);
+    height: 40px;
     background-color: var(--t-black);
+    color: var(--t-white);
+    text-align: center;
   }
-
-  
 }
