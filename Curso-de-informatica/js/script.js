@@ -1,4 +1,4 @@
-const botao = document.getElementById("btn");
+const botao = document.getElementByClassName("btn");
 
 botao.addEventListener("click", function() {
   window.location.href = "https://www.asaas.com/c/31ee15ewkbb0vgnq";
