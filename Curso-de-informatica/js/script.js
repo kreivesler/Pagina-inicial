@@ -1,8 +1,10 @@
-const botao = document.getElementsByClassName("btn");
+const botoes = document.getElementsByClassName("btn");
 
-botao.addEventListener("click", function() {
-  window.location.href = "https://www.asaas.com/c/31ee15ewkbb0vgnq";
-});
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].addEventListener("click", function() {
+    window.location.href = "https://www.asaas.com/c/31ee15ewkbb0vgnq";
+  });
+}
 
 document.querySelectorAll('a[href^="#sv"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
