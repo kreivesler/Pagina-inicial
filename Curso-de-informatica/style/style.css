@@ -117,7 +117,7 @@
   }
   .hed h1 {
     color: var(--t-white);
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     margin-left: 20px;
   }
 
@@ -133,7 +133,7 @@
 
   .hed ul li a {
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--t-white);
     padding: 5px;
   }
@@ -171,7 +171,7 @@
   }
 
   .btn {
-    width: 300px;
+    width: 250px;
     height: 50px;
     font-size: 1.4rem;
     margin-right: 15%;
@@ -263,7 +263,7 @@
   .secAction {
     width: 100vw;
     max-width: 600px;
-    height: 800px;
+    height: 750px;
     display: flex;
     flex-direction: column;
         align-items: flex-end;
@@ -293,7 +293,7 @@
 
   .txt-ac h3 {
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--t-white);
   }
 
@@ -304,7 +304,7 @@
   }
 
   .btnTwo {
-    width: 180px;
+    width: 150px;
     height: 50px;
     font-size: 1.2rem;
     margin-left: 10%;
@@ -350,7 +350,7 @@
     width: 70%;
     height: 300px;
     position: absolute;
-    margin-top: 70%;
+    margin-top: 85%;
     margin-left: -20%;
     background-color: #ffee0000;
     flex-direction: column;
@@ -402,7 +402,7 @@
   .n-sec a {
     text-decoration: none;
     color: var(--t-white);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .n-sec a:hover {
@@ -719,7 +719,7 @@
 
   .txt-ac h3 {
     width: 90%;
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--t-white);
   }
 
@@ -776,7 +776,7 @@
     width: 70%;
     height: 300px;
     position: absolute;
-    margin-top: 40%;
+    margin-top: 45%;
     margin-left: -20%;
     background-color: #ffee0000;
     flex-direction: column;
@@ -1157,10 +1157,10 @@
   }
 
   .btnTwo {
-    width: 250px;
+    width: 280px;
     height: 50px;
     font-size: 1.2rem;
-    margin-left: 5%;
+    margin-left: 8%;
     margin-top: 2%;
     border-style: none;
     color: #ffffff;
@@ -1427,7 +1427,7 @@
   .sec {
     width: 100vw;
     max-width: 1200px;
-    height: 400px;
+    height: 550px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -1473,7 +1473,7 @@
         flex-wrap: nowrap;
     width: 100vw;
     max-width: 1200px;
-    height: 800px;
+    height: 920px;
     padding-top: 20px;
     background-image: url("https://kreivesler.github.io/Pagina-inicial/Curso-de-informatica/img/fundoWEB2.png");
     background-size: cover;
@@ -1485,7 +1485,7 @@
     width: 80%;
     height: 200px;
     position: absolute;
-    margin-top: 4%;
+    margin-top: 6%;
     background-color: #ffee0000;
     align-content: center;
       justify-content: center;
@@ -1526,7 +1526,7 @@
     width: 80%;
     height: 200px;
     position: absolute;
-    margin-top: 34%;
+    margin-top: 44%;
   }
 
   .txt-st h3 {
@@ -1543,7 +1543,7 @@
   .secAction {
     width: 100vw;
     max-width: 1200px;
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
         align-items: flex-end;
@@ -1579,7 +1579,7 @@
   }
 
   .txt-ac p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 90%;
     color: var(--t-white);
   }
@@ -2019,7 +2019,7 @@
     width: 40%;
     height: 300px;
     position: absolute;
-    margin-top: 25%;
+    margin-top: 18%;
     margin-left: -40%;
     background-color: #ffee0000;
     flex-direction: column;
@@ -2055,7 +2055,7 @@
     flex-direction: row;
         align-items: center;
     position: absolute;
-    margin-top: 48%;
+    margin-top: 45%;
   }
 
   .n-sec ul {
