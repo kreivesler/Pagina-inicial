@@ -13,29 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-const botao = document.getElementById("btn");
+const botoes = document.getElementsByClassName('btn');
 
-botao.addEventListener("click", function() {
-  window.location.href = "https://wa.me/31995341667";
-});
-
-document.querySelectorAll('a[href^="#sec-two"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].addEventListener("click", function() {
+    window.location.href = "https://wa.me/31995341667";
   });
-});
+}
 
-document.querySelectorAll('a[href^="#sec-two"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
 
