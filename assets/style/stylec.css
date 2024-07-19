@@ -1,3 +1,169 @@
+@media only screen and (min-width: 375px) and (max-width: 400px){
+  h2, h4, h5{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .cb2{
+    display: none;
+  }
+  .bm{
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      background-color: white;
+      border-style: none;
+    }
+    #sb-m{
+      width: 70%;
+      max-width: 500px;
+      height: 100%;
+      display: none;
+      position: absolute;
+      background-color: black;
+      cursor: pointer;
+      border-style: solid;
+      border-top-width: 1px;
+      border-top-color: white;
+    }
+    #sb-m ul{
+      padding-left: 15px;
+      margin: 0;
+    }
+    #sb-m li{
+      list-style: none;
+    }
+    #sb-m a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #sb-m a:hover{
+      border-style: solid;
+      border-color: #4332d9ff;
+      border-width: 0;
+      border-bottom-width: 2px;
+    }
+    .sec{
+      padding: 5px;
+    }
+    .sec1{
+      background-size: cover;
+      background-position: center;
+    }
+    .cxt{
+      width: 80%;
+    }
+    .cxt1 p{
+      color: white;
+    }
+    .cxtt{
+      width: 35%;
+    }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 160px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .btn{
+      width: 120px;
+      font-size: 1rem;
+    }
+    .cxt2{
+      width: 250px;
+    }
+    .cxt2 p{
+      font-size: 0.8rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .cgd h3{
+      font-size: 1rem;
+      margin: 5px;
+    }
+    .gd{
+      width: 100%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi h4{
+      font-size: 1rem;
+    }
+    .gdi p{
+      font-size: 0.8rem;
+    }
+    .cxt2 b{
+      font-size: 0.8rem;
+    }
+    .cxt2 p{
+      font-size: 0.7rem;
+    }
+    .cxf{
+      width: 50%;
+    }
+    input{
+      width: 180px;
+    }
+    textarea{
+      width: 180px;
+    }
+    .btn1{
+      width: 180px;
+      font-size: 0.8rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: column;
+    }
+    .inf li{
+      font-size: 0.7rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 150px;
+      height: 100px;
+    }
+}
 @media only screen and (min-width: 400px) and (max-width: 500px){
   h2, h4, h5{
     font-size: 1.2rem;
@@ -78,6 +244,9 @@
     }
     .sec2{
       padding: 10px;
+    }
+    .sec2 h2{
+      font-size: 1rem;
     }
     .btn{
       width: 120px;
