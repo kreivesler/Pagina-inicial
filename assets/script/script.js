@@ -21,4 +21,13 @@ for (let i = 0; i < botoes.length; i++) {
   });
 }
 
+const botaop = document.getElementsByClassName('btnp');
+
+for (let i = 0; i < botaop.length; i++) {
+  botaop[i].addEventListener("click", function(){
+    window.location.href = "https://wa.me/31995341667";
+  });
+  
+}
+
 

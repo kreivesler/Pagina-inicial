@@ -93,6 +93,34 @@
       height: 700px;
       justify-content: normal;
     }
+    .secp{
+      height: 980px;
+      justify-content: space-around;
+    }
+    .secp h3 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+    .planos{
+      flex-direction: column;
+    }
+    .itp{
+      width: 200px;
+      height: 70%;
+      margin-bottom: 10px;
+    }
+    .itp h4{
+      font-size: 1.5rem;
+    }
+    .itp p {
+      font-size: 1rem;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.9rem;
+    }
     .cgd{
       width: 80%;
       height: 80%;
@@ -262,6 +290,34 @@
       height: 700px;
       justify-content: normal;
     }
+    .secp{
+      height: 980px;
+      justify-content: space-around;
+    }
+    .secp h3 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+    .planos{
+      flex-direction: column;
+    }
+    .itp{
+      width: 200px;
+      height: 70%;
+      margin-bottom: 10px;
+    }
+    .itp h4{
+      font-size: 1.5rem;
+    }
+    .itp p {
+      font-size: 1rem;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.9rem;
+    }
     .cgd{
       width: 80%;
       height: 80%;
@@ -420,6 +476,25 @@
     .me2{
       height: 700px;
       justify-content: normal;
+    }
+    .secp{
+      height: 500px;
+    }
+    .secp h3 {
+      font-size: 2rem;
+    }
+    .itp{
+      width: 160px;
+      height: 70%;
+    }
+    .itp h4{
+      font-size: 1.2rem;
+    }
+    .itp li{
+      font-size: 0.7rem;
+    }
+    .itp button{
+      font-size: 0.6rem;
     }
     .cgd{
       width: 80%;
@@ -580,6 +655,19 @@
       height: 700px;
       justify-content: normal;
     }
+    .secp{
+      height: 650px;
+    }
+    .itp{
+      width: 180px;
+      height: 60%;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.8rem;
+    }
     .cgd{
       width: 80%;
       height: 80%;
@@ -702,6 +790,9 @@
       height: 520px;
       align-items: flex-start;
     }
+    .itp{
+      width: 220px;
+    }
     .cgd{
       width: 80%;
       height: 80%;
@@ -764,3 +855,4 @@
       height: 150px;
     }
 }
+
