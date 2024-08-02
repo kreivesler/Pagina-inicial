@@ -1,0 +1,858 @@
+@media only screen and (min-width: 375px) and (max-width: 400px){
+  h2, h4, h5{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .cb2{
+    display: none;
+  }
+  .bm{
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      background-color: white;
+      border-style: none;
+    }
+    #sb-m{
+      width: 70%;
+      max-width: 500px;
+      height: 100%;
+      display: none;
+      position: absolute;
+      background-color: black;
+      cursor: pointer;
+      border-style: solid;
+      border-top-width: 1px;
+      border-top-color: white;
+    }
+    #sb-m ul{
+      padding-left: 15px;
+      margin: 0;
+    }
+    #sb-m li{
+      list-style: none;
+    }
+    #sb-m a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #sb-m a:hover{
+      border-style: solid;
+      border-color: #4332d9ff;
+      border-width: 0;
+      border-bottom-width: 2px;
+    }
+    .sec{
+      padding: 5px;
+    }
+    .sec1{
+      background-size: cover;
+      background-position: center;
+    }
+    .cxt{
+      width: 80%;
+    }
+    .cxt1 p{
+      color: white;
+    }
+    .cxtt{
+      width: 35%;
+    }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 160px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .btn{
+      width: 120px;
+      font-size: 1rem;
+    }
+    .cxt2{
+      width: 250px;
+    }
+    .cxt2 p{
+      font-size: 0.8rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .secp{
+      height: 980px;
+      justify-content: space-around;
+    }
+    .secp h3 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+    .planos{
+      flex-direction: column;
+    }
+    .itp{
+      width: 200px;
+      height: 70%;
+      margin-bottom: 10px;
+    }
+    .itp h4{
+      font-size: 1.5rem;
+    }
+    .itp p {
+      font-size: 1rem;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.9rem;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .cgd h3{
+      font-size: 1rem;
+      margin: 5px;
+    }
+    .gd{
+      width: 100%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi h4{
+      font-size: 1rem;
+    }
+    .gdi p{
+      font-size: 0.8rem;
+    }
+    .cxt2 b{
+      font-size: 0.8rem;
+    }
+    .cxt2 p{
+      font-size: 0.7rem;
+    }
+    .cxf{
+      width: 50%;
+    }
+    input{
+      width: 180px;
+    }
+    textarea{
+      width: 180px;
+    }
+    .btn1{
+      width: 180px;
+      font-size: 0.8rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: column;
+    }
+    .inf li{
+      font-size: 0.7rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 150px;
+      height: 100px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px){
+  h2, h4, h5{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .cb2{
+    display: none;
+  }
+  .bm{
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      background-color: white;
+      border-style: none;
+    }
+    #sb-m{
+      width: 70%;
+      max-width: 500px;
+      height: 100%;
+      display: none;
+      position: absolute;
+      background-color: black;
+      cursor: pointer;
+      border-style: solid;
+      border-top-width: 1px;
+      border-top-color: white;
+    }
+    #sb-m ul{
+      padding-left: 15px;
+      margin: 0;
+    }
+    #sb-m li{
+      list-style: none;
+    }
+    #sb-m a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #sb-m a:hover{
+      border-style: solid;
+      border-color: #4332d9ff;
+      border-width: 0;
+      border-bottom-width: 2px;
+    }
+    .sec{
+      padding: 5px;
+    }
+    .sec1{
+      background-size: cover;
+      background-position: center;
+    }
+    .cxt{
+      width: 80%;
+    }
+    .cxt1 p{
+      color: white;
+    }
+    .cxtt{
+      width: 35%;
+    }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 200px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .sec2 h2{
+      font-size: 1rem;
+    }
+    .btn{
+      width: 120px;
+      font-size: 1rem;
+    }
+    .cxt2{
+      width: 250px;
+    }
+    .cxt2 p{
+      font-size: 0.8rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .secp{
+      height: 980px;
+      justify-content: space-around;
+    }
+    .secp h3 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+    .planos{
+      flex-direction: column;
+    }
+    .itp{
+      width: 200px;
+      height: 70%;
+      margin-bottom: 10px;
+    }
+    .itp h4{
+      font-size: 1.5rem;
+    }
+    .itp p {
+      font-size: 1rem;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.9rem;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .gd{
+      width: 90%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi p{
+      font-size: 0.8rem;
+    }
+    .cxt2 b{
+      font-size: 1rem;
+    }
+    .cxt2 p{
+      font-size: 0.7rem;
+    }
+    .cxf{
+      width: 50%;
+    }
+    input{
+      width: 180px;
+    }
+    textarea{
+      width: 180px;
+    }
+    .btn1{
+      width: 180px;
+      font-size: 0.8rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: column;
+    }
+    .inf li{
+      font-size: 0.8rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 150px;
+      height: 100px;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px){
+  h2, h4, h5{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .cb2{
+    display: none;
+  }
+  .bm{
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      background-color: white;
+      border-style: none;
+    }
+    #sb-m{
+      width: 70%;
+      max-width: 500px;
+      height: 100%;
+      display: none;
+      position: absolute;
+      background-color: black;
+      cursor: pointer;
+      border-style: solid;
+      border-top-width: 1px;
+      border-top-color: white;
+    }
+    #sb-m ul{
+      padding-left: 15px;
+      margin: 0;
+    }
+    #sb-m li{
+      list-style: none;
+    }
+    #sb-m a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #sb-m a:hover{
+      border-style: solid;
+      border-color: #4332d9ff;
+      border-width: 0;
+      border-bottom-width: 2px;
+    }
+    .sec{
+      padding: 5px;
+    }
+    .sec1{
+      background-size: cover;
+      background-position: center;
+    }
+    .cxt{
+      width: 80%;
+    }
+    .cxt1 p{
+      color: white;
+    }
+    .cxtt{
+      width: 40%;
+    }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 200px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .btn{
+      width: 120px;
+      font-size: 1rem;
+    }
+    .cxt2{
+      width: 220px;
+    }
+    .cxt2 p{
+      font-size: 1rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .secp{
+      height: 500px;
+    }
+    .secp h3 {
+      font-size: 2rem;
+    }
+    .itp{
+      width: 160px;
+      height: 70%;
+    }
+    .itp h4{
+      font-size: 1.2rem;
+    }
+    .itp li{
+      font-size: 0.7rem;
+    }
+    .itp button{
+      font-size: 0.6rem;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .gd{
+      width: 90%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi p{
+      font-size: 1rem;
+    }
+    .cxt2 b{
+      font-size: 1rem;
+    }
+    .cxt2 p{
+      font-size: 0.7rem;
+    }
+    .cxf{
+      width: 50%;
+    }
+    input{
+      width: 210px;
+    }
+    textarea{
+      width: 210px;
+    }
+    .btn1{
+      width: 210px;
+      font-size: 1rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: column;
+    }
+    .inf li{
+      font-size: 0.8rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 150px;
+      height: 100px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  h2, h4, h5{
+    font-size: 1.8rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  .cb2{
+    display: none;
+  }
+  .bm{
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 1rem;
+      background-color: white;
+      border-style: none;
+    }
+    #sb-m{
+      width: 70%;
+      max-width: 500px;
+      height: 100%;
+      display: none;
+      position: absolute;
+      background-color: black;
+      cursor: pointer;
+      border-style: solid;
+      border-top-width: 1px;
+      border-top-color: white;
+    }
+    #sb-m ul{
+      padding-left: 15px;
+      margin: 0;
+    }
+    #sb-m li{
+      list-style: none;
+    }
+    #sb-m a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #sb-m a:hover{
+      border-style: solid;
+      border-color: #4332d9ff;
+      border-width: 0;
+      border-bottom-width: 2px;
+    }
+    .sec{
+      padding: 5px;
+    }
+    .sec1{
+      background-size: cover;
+      background-position: center;
+    }
+    .cxt{
+      width: 80%;
+    }
+    .cxt1 p{
+      color: white;
+    }
+    .cxtt{
+      width: 40%;
+    }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 250px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .btn{
+      width: 120px;
+      font-size: 1rem;
+    }
+    .cxt2{
+      width: 350px;
+    }
+    .cxt2 p{
+      font-size: 0.9rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .secp{
+      height: 650px;
+    }
+    .itp{
+      width: 180px;
+      height: 60%;
+    }
+    .itp li{
+      font-size: 0.9rem;
+    }
+    .itp button{
+      font-size: 0.8rem;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .gd{
+      width: 90%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi p{
+      font-size: 1.2rem;
+    }
+    .cxt2 b{
+      font-size: 1rem;
+    }
+    .cxf{
+      width: 50%;
+    }
+    input{
+      width: 210px;
+    }
+    textarea{
+      width: 210px;
+    }
+    .btn1{
+      width: 210px;
+      font-size: 1rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: row;
+    }
+    .inf li{
+      font-size: 0.8rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 150px;
+      height: 100px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  h2, h4, h5{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.4rem;
+  }
+  .sec{
+    padding: 5px;
+  }
+  .sec1{
+      background-size: cover;
+      background-position: center;
+  }
+  .cxt{
+    width: 70%;
+  }
+  .cxt1 p{
+    color: white;
+  }
+  .cxtt{
+    width: 40%;
+  }
+    .im{
+      display: none;
+    }
+    .im2{
+      width: 400px;
+      margin: 0;
+      background-position:left right;
+    }
+    .im3{
+      margin: 0;
+    }
+    .cxc{
+      width: 70%;
+    }
+    .sec2{
+      padding: 10px;
+    }
+    .btn{
+      width: 180px;
+      font-size: 1.2rem;
+    }
+    .cxt2{
+      width: 450px;
+    }
+    .cxt2 b{
+      font-size: 1.4rem;
+    }
+    .cxt2 p{
+      font-size: 1rem;
+    }
+    .me2{
+      height: 700px;
+      justify-content: normal;
+    }
+    .me3{
+      height: 520px;
+      align-items: flex-start;
+    }
+    .itp{
+      width: 220px;
+    }
+    .cgd{
+      width: 80%;
+      height: 80%;
+    }
+    .gd{
+      width: 90%;
+      height: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gdi{
+      width: 100%;
+    }
+    .gdi h4{
+      font-size: 1.4rem;
+    }
+    .gdi p{
+      font-size: 1.2rem;
+    }
+    .cxf{
+      width: 50%;
+      align-items: center;
+    }
+    input{
+      width: 250px;
+    }
+    textarea{
+      width: 250px;
+    }
+    .btn1{
+      width: 250px;
+      font-size: 1rem;
+    }
+    .me4{
+      padding: 10px;
+    }
+    .inf{
+      flex-direction: row;
+    }
+    .inf li{
+      font-size: 0.8rem;
+    }
+    .mingcute--facebook-fill{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--instagram{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .mdi--linkedin{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .logos--whatsapp-icon{
+      width: 1.5em;
+      height: 1.5em;
+    }
+    iframe{
+      width: 250px;
+      height: 150px;
+    }
+}
+
